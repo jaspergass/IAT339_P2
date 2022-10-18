@@ -1,0 +1,53 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'Germania One';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/GermaniaOne-Regular.eot');
+    src: url('../fonts/GermaniaOne-Regular.woff') format('woff'), 
+        url('../fonts/GermaniaOne-Regular.woff2') format('woff2'),
+        url('../fonts/GermaniaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Karantina Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Karantina-Regular.eot');
+    src: url('../fonts/Karantina-Regular.woff') format('woff'), 
+        url('../fonts/Karantina-Regular.woff2') format('woff2'),
+        url('../fonts/Karantina-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Karantina Bold';
+	font-weight: bold;
+	font-style: bold;
+	src: url('../fonts/Karantina-Bold.eot');
+    src: url('../fonts/Karantina-Bold.woff') format('woff'), 
+        url('../fonts/Karantina-Bold.woff2') format('woff2'),
+        url('../fonts/Karantina-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Karantina Light';
+	font-weight: lighter;
+	font-style: lighter;
+	src: url('../fonts/Karantina-Light.eot');
+    src: url('../fonts/Karantina-Light.woff') format('woff'), 
+        url('../fonts/Karantina-Light.woff2') format('woff2'),
+        url('../fonts/Karantina-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gantari';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Gantari-Regular.eot');
+    src: url('../fonts/Gantari-Regular.woff') format('woff'), 
+        url('../fonts/Gantari-Regular.woff2') format('woff2'),
+        url('../fonts/Gantari-Regular.ttf') format('truetype');
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- multiple page structure learned from https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites -->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="../css/normalize.css"> 
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" href="../css/fonts.css"> 
+  </head>
+
+  <body>
+    <header>
+        <h1>Brand Name</h1>
+
+        <nav class="navbar">       
+            <a class="button-nav" href="../index.html">Home</a>
+            <a class="button-nav" href="../html/products.html">Products</a>
+            <a class="button-nav" href="../html/checkout.html">Check Out</a>
+        </nav>
+    </header>
+
+    <section id="checkout">
+        <h2>Check Out</h2>
+
+            <section class="box-column checkout-style">
+                
+                <div class="box-item checkout-item">
+                    <div class="box-row">
+                        <div class="checkout-left">
+                            <img src="../img/P6290024.jpg" alt="Red and black beetles on a flower stem."> 
+                        </div>
+                        <div class="checkout-right">
+                            <h3>Rose Weevil</h3>
+                            <p>Quantity: 2</p>
+                            <p>Price: $30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-item checkout-item">
+                    <div class="box-row">
+                        <div class="checkout-left">
+                            <img src="../img/P6120118.jpg" alt="A black fly on a white flower.">
+                        </div>
+                        <div class="checkout-right">
+                            <h3>Bee Fly</h3>
+                            <p>Quantity: 1</p>
+                            <p>Price: $30</p>
+                        </div>
+                    </div>
+                </div> 
+               
+                <div class="box-item checkout-item">
+                    <div class="box-row">
+                        <div class="checkout-left">
+                            <h4>Total Cost: $60</h4>
+                        </div>
+                        <div class="checkout-right">
+                            <button type="submit" value="Submit">Check out</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <h2>Payment Form</h2>
+            <div class="box-item"> 
+                <form>
+                    <label for="Fname">First Name:</label>
+                    <input type="text" id="Fname" name="Fname">
+                    <label for="Lname">Last Name:</label>
+                    <input type="text" id="Lname" name="Lname">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </form>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input id="email" type="email" name="email"><br>
+                    <label for="paymentOp">Payment options</label>
+                    <input id="paymentOp" type="radio" name="paymentOp" value="paypal"> Paypal
+                    <input type="radio" name="paymentOp" value="visa"> Visa
+                    <input type="radio" name="paymentOp" value="mastercard"> Mastercard
+                    <button type="submit" value="Submit">Confirm</button>
+                </form>
+            </div>
+        
+    </section>
+    
+  </body>
+</html>

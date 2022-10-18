@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- multiple page structure learned from https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites -->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../css/normalize.css"> 
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" href="../css/fonts.css"> 
+  </head>
+
+  <body>
+    <header>
+        <h1>Brand Name</h1>
+
+        <nav class="navbar">       
+            <a class="button-nav" href="../index.html">Home</a>
+            <a class="button-nav" href="../html/products.html">Products</a>
+            <a class="button-nav" href="../html/checkout.html">Check Out</a>
+        </nav>
+    </header>
+
+    <section id="products">
+          <div class="box-wrap">
+            <div class="box-item product">
+              <img src="../img/P6290024.jpg" alt="Red and black beetles on a flower stem."> 
+              <h3>Rose Weevil</h3>
+              <h4>$15</h4>
+              <p>With a very unique shape and high contrast colours, these bugs stand out.</p>
+              <label for="quantity">Quantity:</label>
+              <input type="text" id="quantity">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+            <div class="box-item product">
+              <img src="../img/P6120110.jpg" alt="A red and blue beetle on a green flower bud."> 
+              <h3>Flower Beetle</h3>
+              <h4>$20</h4>
+              <p>These small beetles are bright and colourful, making a great addition to any collection.</p>
+              <label for="quantity2">Quantity:</label>
+              <input type="text" id="quantity2">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+            <div class="box-item product">
+              <img src="../img/P6120118.jpg" alt="A black fly on a white flower."> 
+              <h3>Bee Fly</h3>
+              <h4>$30</h4>
+              <p>This stunning specimine has an all black appearance, including parts of its wings.</p>
+              <label for="quantity3">Quantity:</label>
+              <input type="text" id="quantity3">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+            <div class="box-item product">
+              <img src="../img/P7170172.jpg" alt="A shiny bright green fly with black bands."> 
+              <h3>Metalic Green Fly</h3>
+              <h4>$15</h4>
+              <p>These flies, though small, are great to look at because of their bright colour and markings.</p>
+              <label for="quantity4">Quantity:</label>
+              <input type="text" id="quantity4">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+            <div class="box-item product">
+              <img src="../img/P7170135.jpg" alt="A shiny dark green fly on white flowers."> 
+              <h3>Green House Fly</h3>
+              <h4>$12</h4>
+              <p>Your typical housefly can also be beautiful. This variety is espeically shiny and comes in a dark green colour.</p>
+              <label for="quantity5">Quantity:</label>
+              <input type="text" id="quantity5">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+            <div class="box-item product">
+              <img src="../img/P6120094.jpg" alt="A yellow and brown fly with big eyes."> 
+              <h3>Hoverfly</h3>
+              <h4>$18</h4>
+              <p>A unique fly that has a distint way of hovering like a hummingbird. They make for great pollinators.</p>
+              <label for="quantity6">Quantity:</label>
+              <input type="text" id="quantity6">
+              <button type="submit" value="Submit">Add to cart</button>
+            </div>
+          </div>
+    </section>
+    
+  </body>
+</html>
