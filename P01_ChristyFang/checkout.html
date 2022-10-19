@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>P01 - Style Guide </title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>JUST SOCKS Inc. - Checkout Template
+        <a href="index.html"><img src="justsocks.png" alt="justsockslogo" style="float:right;width:130px;height:130px;"></a></h1>
+
+      <!-- NAVIGATION BAR // -->
+      <ul>
+        <li><a href="index.html">JUST SOCKS</a></li>
+        <li><a href="themes.html">THEMES</a></li>
+        <li><a href="artists.html">ARTISTS</a></li>
+        <li><a href="look_book.html">LOOK BOOK</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li style="float:right"><a href="cart.html"> <img src="cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .</a></li>
+      </ul>
+    </header>
+
+      <!-- CHECKOUT CART // -->
+      <h2>Your Cart:</h2>
+
+      <div class="cart">
+        <div class="item">
+          <img src="monalisa.jpeg" alt="Mona Lisa" style="float:left;width:80px;height:100px;">
+          <p>Mona Lisa Crew Socks</p>
+          <h4>$12</h4>
+        </div>
+
+        <div class="item">
+          <img src="flyingpig.jpeg" alt="Flying Pig" style="float:left;width:80px;height:100px;">
+          <p>Flying Pig Crew Socks</p>
+          <h4>$12</h4>
+        </div>
+
+        <div class="item">
+          <img src="balloondog.jpeg" alt="Balloon Dog" style="float:left;width:80px;height:100px;">
+          <p>Balloon Dogs Crew Socks</p>
+          <h4>$14</h4>
+        </div>
+        <h4>Cart Subtotal: $38</h4>
+      </div>
+
+      <!-- PAYMENT FORM // -->
+      <h2>Proceed to Payment:</h2>
+
+      <form>
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="credit_card_no.">Credit Card No.:</label><br>
+        <input type="text" id="credit_card_no." name="credit card no."><br>
+        <input type="radio" id="visa" name="payment_form" value="VISA">
+        <label for="visa">VISA</label>
+        <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+          <label for="mastercard">MasterCard</label>
+        <input type="radio" id="paypal" name="payment_form" value="Paypal">
+          <label for="paypal">PayPal</label><br><br>
+        <label for="expiration_date">Expiration Date:</label><br>
+        <input type="date" id="expiration_date" name="expiration date"><br><br>
+        <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+      </form>
+      <h3>--------------------<h3>
+      <h2>THANK YOU!<h2>
+  </body>
+</html>
