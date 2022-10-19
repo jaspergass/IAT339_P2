@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>P01 - Style Guide </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Insect Collective - Style Guide
+        
+        <a href="index.html"><img src="justsocks.png" alt="justsockslogo" style="float:right;width:130px;height:130px;"></a></h1>
+        
+
+      <ul>
+        <li><a href="#interactive_elements">Interactive Elements</a></li>
+        <li><a href="#text_elements">Text Elements</a></li>
+        <li><a href="#combined_elements">Combined Elements</a></li>
+        <li><a href="html/product_listing.html">Product Listing Template</a></li>
+        <li><a href="html/checkout.html">Checkout Template</a></li>
+        <li style="float:right"><a href="#citations">Citations</a>
+      </ul>
+    </header>
+
+    <!-- Brand styling section -->
+    <section class="element">
+      <h3>Brand Color</h3>
+      <div class="box-wrap">
+        <div class="box-color">
+          <p>#efe8e1</p>
+        </div>
+        <div class="box-color">
+          <p>#7d7166</p>
+        </div>
+        <div class="box-color">
+          <p>#6e8015</p>
+        </div>
+        <div class="box-color">
+          <p>#424e08</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_links -->
+        <h4>Rendered example:</h4><br>
+        <p>
+          Here is an in-text link to
+          <a href="https://www.thebay.com/product/hot-sox-mens-starry-night-socks-0600087473085.html">Van Gogh socks!</a>
+        </p>
+
+        <h4>CSS selector:</h4>
+        <p>a:hover</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;p><br>
+          Here is an in-text link to<br>
+          &lt;a href="https://www.thebay.com/product/hot-sox-mens-starry-night-socks-0600087473085.html">Van Gogh socks!&lt;/a><br>
+          &lt;/p>
+        </code>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <!-- This portion of code is drawn from the style guide template provided -->
+        <h4>Rendered example:</h4><br>
+        <nav>
+          <a href="https://www.thebay.com/brand/hot-sox">JUST SOCKS</a>
+        </nav>
+
+        <h4>CSS selector:</h4>
+        <p>nav a:hover, nav a:focus</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;nav>&lt;a href="https://www.thebay.com/brand/hot-sox">JUST SOCKS&lt;/a>&lt;/nav>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/tags/tag_button -->
+        <h4>Rendered example:</h4><br>
+        <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+        <button class="button" onclick="alert('Cart Reset!')">Reset</button>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .button<br>
+          .button:hover, .button:focus
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;button class="button" onclick="alert('Order Confirmed!')">Submit&lt;/button><br>
+          &lt;button class="button" onclick="alert('Cart Reset!')">Reset&lt;/button><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_form_input_types -->
+        <h4>Rendered example:</h4><br>
+        <label for="label">Label:</label><br>
+        <input type="text" id="label" name="label">
+
+        <h4>CSS selector:</h4>
+        <p>
+          input<br>
+          input:focus<br>
+          input:hover
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;label for="label">Label:&lt;/label>&lt;br><br>
+          &lt;input type="text" id="label" name="label"><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/tags/att_input_type_radio -->
+        <h4>Rendered example:</h4><br>
+          <input type="radio" id="radio" value="LABEL">
+          <label for="label">Label</label>
+
+        <h4>CSS selector:</h4>
+        <p>
+          form
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;input type="radio" id="label" value="Label"><br>
+          &lt;label for="label">Label&lt;/label><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_links -->
+        <h4>Rendered example:</h4><br>
+        <a href="https://nocoldfeet.co/blogs/news/6-sock-rules-you-should-never-break">
+          <img src="justsocks.png" alt="6-sock-rules-you-should-never-break" style="width:20%">
+        </a>
+
+        <h4>CSS selector:</h4>
+        <p>img:hover</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;a href="https://nocoldfeet.co/blogs/news/6-sock-rules-you-should-never-break"><br>
+            &lt;img src="justsocks.png" alt="6-sock-rules-you-should-never-break" style="width:20%"><br>
+          &lt;/a>
+        </code>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_headings -->
+        <h4>Rendered example:</h4>
+        <h2>Heading 1</h2>
+        <h3>Heading 2</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 4</h5>
+
+        <h4>CSS selector:</h4>
+        <p>
+          h2<br>
+          h3<br>
+          h4<br>
+          h5<br>
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;h2>Heading 1&lt;/h2><br>
+          &lt;h3>Heading 2&lt;/h3><br>
+          &lt;h4>Heading 3&lt;/h4><br>
+          &lt;h5>Heading 4&lt;/h5>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>Rendered example:</h4><br>
+        <p>
+          The most stylish of men know that socks are one of the most important elements of style.
+          Important men know the importance of wearing socks properly. They do this by adhering to
+          a set of tried and true rules about wearing socks. While the socks themselves will change
+          over the years, these rules never will. Here are 6 sock rules you should never break.
+        </p>
+
+        <h4>CSS selector:</h4>
+        <p>p
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;p><br>
+          The most stylish of men know that socks are one of the most important elements of style.
+          Important men know the importance of wearing socks properly. They do this by adhering to
+          a set of tried and true rules about wearing socks. While the socks themselves will change
+          over the years, these rules never will. Here are 6 sock rules you should never break.<br>
+          &lt;/p>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_lists_ordered -->
+        <h4>Rendered example:</h4>
+        <ol type="1">
+          <li>NO HOLES. EVER.</li>
+          <li>DON’T HOLD ON TO ORPHANS</li>
+          <li>HAVE SOME FUN IN YOUR SOCK DRAWER</li>
+        </ol>
+
+        <h4>CSS selector:</h4>
+        <p>
+          ol<br>
+          ol li
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;ol type="1"><br>
+            &lt;li>NO HOLES. EVER.&lt;/li><br>
+            &lt;li>DON’T HOLD ON TO ORPHANS&lt;/li><br>
+            &lt;li>HAVE SOME FUN IN YOUR SOCK DRAWER&lt;/li><br>
+          &lt;/ol>
+        </code>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+
+        <!-- This portion of code is drawn from the style guide template provided -->
+        <h3>Main Navigation</h3>
+
+        <h4>Rendered example:</h4><br>
+        <ul>
+          <li><a href="just_socks.html">JUST SOCKS</a></li>
+          <li><a href="themes.html">THEMES</a></li>
+          <li><a href="artists.html">ARTISTS</a></li>
+          <li><a href="look_book.html">LOOK BOOK</a></li>
+          <li><a href="about_us.html">ABOUT US</a></li>
+          <li style="float:right"><a href="cart.html"> <img src="cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .</a></li>
+        </ul>
+
+        <h4>CSS selector:</h4>
+        <p>
+          ul<br>
+          ul li<br>
+          ul li a<br>
+          ul li a:hover:not(.active)
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;ul><br>
+            &lt;li>&lt;a href="just_socks.html">JUST SOCKS&lt;/a>&lt;/li><br>
+            &lt;li>&lt;a href="themes.html">THEMES&lt;/a>&lt;/li><br>
+            &lt;li>&lt;a href="artists.html">ARTISTS&lt;/a>&lt;/li><br>
+            &lt;li>&lt;a href="look_book.html">LOOK BOOK&lt;/a>&lt;/li><br>
+            &lt;li>&lt;a href="about_us.html">ABOUT US&lt;/a>&lt;/li><br>
+            &lt;li style="float:right">&lt;a href="cart.html">&lt;img src="cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .&lt;/a>&lt;/li><br>
+          &lt;/ul>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>Rendered example:</h4>
+
+        <div class="list">
+          <div class="product">
+            <a href="https://www.thebay.com/product/hot-sox-mens-mona-lisa-crew-socks-0600091761836.html?dwvar_0600091761836_color=MINT">
+              <img src="monalisa.jpeg" alt="Mona Lisa Crew Socks" style="width:50%">
+            </a>
+            <h4>Mona Lisa Crew Socks | $12</h4>
+            <button class="button" onclick="alert('Socks Added!')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <a href="https://www.thebay.com/product/hot-sox-mens-flying-pig-crew-socks-0600091761837.html?type=Featured%20Items&term=flying">
+              <img src="flyingpig.jpeg" alt="Flying Pig Crew Socks" style="width:50%">
+            </a>
+            <h4>Mona Lisa Crew Socks | $12</h4>
+            <button class="button" onclick="alert('Socks Added!')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <a href="https://www.thebay.com/product/hot-sox-mens-balloon-dogs-crew-socks-0600092625793.html?type=Featured%20Items&term=balloon%20dog">
+              <img src="balloondog.jpeg" alt="Balloon Dogs Crew Socks" style="width:50%">
+            </a>
+            <h4>Mona Lisa Crew Socks | $14</h4>
+            <button class="button" onclick="alert('Socks Added!')">Add to Cart</button>
+          </div>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          img:hover<br>
+          .list<br>
+          .list.product<br>
+          .button<br>
+          .button:hover, .button:focus
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="list"><br>
+            &lt;div class="product"><br>
+              &lt;a href="https://www.thebay.com/product/hot-sox-mens-mona-lisa-crew-socks-0600091761836.html?dwvar_0600091761836_color=MINT"><br>
+                &lt;img src="monalisa.jpeg" alt="Mona Lisa Crew Socks" style="width:50%"><br>
+              &lt;/a><br>
+              &lt;h4>Mona Lisa Crew Socks | $12&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Socks Added!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="product"><br>
+              &lt;a href="https://www.thebay.com/product/hot-sox-mens-flying-pig-crew-socks-0600091761837.html?type=Featured%20Items&term=flying"><br>
+                &lt;img src="flyingpig.jpeg" alt="Flying Pig Crew Socks" style="width:50%"><br>
+              &lt;/a><br>
+              &lt;h4>Mona Lisa Crew Socks | $12&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Socks Added!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="product"><br>
+              &lt;a href="https://www.thebay.com/product/hot-sox-mens-balloon-dogs-crew-socks-0600092625793.html?type=Featured%20Items&term=balloon%20dog"><br>
+                &lt;img src="balloondog.jpeg" alt="Balloon Dogs Crew Socks" style="width:50%"><br>
+              &lt;/a><br>
+              &lt;h4>Mona Lisa Crew Socks | $14&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Socks Added!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+          &lt;/div>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>Rendered example:</h4><br>
+        <form>
+          <label for="full_name">Full Name:</label><br>
+          <input type="text" id="full_name" name="full name"><br><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br><br>
+          <label for="credit_card_no.">Credit Card No.:</label><br>
+          <input type="text" id="credit_card_no." name="credit card no."><br>
+          <input type="radio" id="visa" name="payment_form" value="VISA">
+          <label for="visa">VISA</label>
+          <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+          <label for="mastercard">MasterCard</label>
+          <input type="radio" id="paypal" name="payment_form" value="Paypal">
+          <label for="paypal">PayPal</label><br><br>
+          <label for="expiration_date">Expiration Date:</label><br>
+          <input type="date" id="expiration_date" name="expiration date"><br><br>
+          <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+        </form>
+
+        <h4>CSS selector:</h4>
+        <p>
+          form
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;form><br>
+            &lt;label for="full_name">Full Name:&lt;/label><br>
+            &lt;input type="text" id="full_name" name="full name">&lt;br><br>
+            &lt;label for="email">Email:&lt;/label><br>
+            &lt;input type="text" id="email" name="email">&lt;br><br>
+            &lt;label for="credit_card_no.">Credit Card No.:&lt;/label><br>
+            &lt;input type="text" id="credit_card_no." name="credit card no."><br>
+            &lt;input type="radio" id="visa" name="payment_form" value="VISA">
+            &lt;label for="visa">VISA&lt;/label>
+            &lt;input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+            &lt;label for="mastercard">MasterCard&lt;/label>
+            &lt;input type="radio" id="paypal" name="payment_form" value="Paypal">
+            &lt;label for="paypal">PayPal&lt;/label>&lt;br><br>
+            &lt;label for="expiration_date">Expiration Date:&lt;/label><br>
+            &lt;input type="date" id="expiration_date" name="expiration date">&lt;br><br>
+            &lt;button class="button" onclick="alert('Order Confirmed!')">Submit&lt;/button><br>
+          &lt;/form>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_images -->
+        <h4>Rendered example:</h4><br>
+
+        <div class="cart">
+          <div class="item">
+            <img src="monalisa.jpeg" alt="Mona Lisa" style="float:left;width:80px;height:100px;">
+            <p>Mona Lisa Crew Socks</p>
+            <h4>$12</h4>
+          </div>
+
+          <div class="item">
+            <img src="flyingpig.jpeg" alt="Flying Pig" style="float:left;width:80px;height:100px;">
+            <p>Flying Pig Crew Socks</p>
+            <h4>$12</h4>
+          </div>
+
+          <div class="item">
+            <img src="balloondog.jpeg" alt="Balloon Dog" style="float:left;width:80px;height:100px;">
+            <p>Balloon Dogs Crew Socks</p>
+            <h4>$14</h4>
+          </div>
+
+          <h4>Cart Subtotal: $38</h4><br>
+          <button class="button" onclick="alert('Proceed to checkout!')">Checkout</button>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .cart<br>
+          .item
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="cart"><br>
+            &lt;div class="item"><br>
+              &lt;img src="monalisa.jpeg" alt="Mona Lisa" style="float:left;width:80px;height:100px;"><br>
+              &lt;p>Mona Lisa Crew Socks&lt;/p><br>
+              &lt;h4>$12&lt;/h4><br>
+            &lt;/div><br><br>
+
+            &lt;div class="item"><br>
+              &lt;img src="flyingpig.jpeg" alt="Flying Pig" style="float:left;width:80px;height:100px;"><br>
+              &lt;p>Flying Pig Crew Socks&lt;/p><br>
+              &lt;h4>$12&lt;/h4><br>
+            &lt;/div><br><br>
+
+            &lt;div class="item"><br>
+              &lt;img src="balloondog.jpeg" alt="Balloon Dog" style="float:left;width:80px;height:100px;"><br>
+              &lt;p>Balloon Dogs Crew Socks&lt;/p><br>
+              &lt;h4>$14&lt;/h4><br>
+            &lt;/div><br>
+            &lt;h4>Cart Subtotal: $38&lt;/h4>&lt;br><br>
+            &lt;button class="button" onclick="alert('Proceed to checkout!')">Checkout&lt;/button><br>
+          &lt;/div>
+
+        </code>
+
+      </section>
+
+    </section>
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ol>
+        <li>Paul, Renner. Designer. 1927. <strong>Futura [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/futura-pt">https://fonts.adobe.com/fonts/futura-pt</a></li>
+        <li>Pngkey. Website. 2022. <strong>Cart [Icon]</strong>. Retrieved from <a href="https://www.pngkey.com/maxpic/u2w7r5t4a9u2a9w7/">https://www.pngkey.com/maxpic/u2w7r5t4a9u2a9w7/</a>.</li>
+        <li>The Bay. Website. 2022. <strong>Mona Lisa Crew Socks [Image]</strong>. Retrieved from <a href="https://www.thebay.com/product/hot-sox-mens-mona-lisa-crew-socks-0600091761836.html?dwvar_0600091761836_color=MINT">https://www.thebay.com/product/hot-sox-mens-mona-lisa-crew-socks-0600091761836.html?dwvar_0600091761836_color=MINT</a>.</li>
+        <li>The Bay. Website. 2022. <strong>Flying Pig Crew Socks [Image]</strong>. Retrieved from <a href="https://www.thebay.com/product/hot-sox-mens-flying-pig-crew-socks-0600091761837.html?type=Featured%20Items&term=flying">https://www.thebay.com/product/hot-sox-mens-flying-pig-crew-socks-0600091761837.html?type=Featured%20Items&term=flying</a>.</li>
+        <li>The Bay. Website. 2022. <strong>Balloon Dogs Crew Socks [Image]</strong>. Retrieved from <a href="https://www.thebay.com/product/hot-sox-mens-balloon-dogs-crew-socks-0600092625793.html?type=Featured%20Items&term=balloon%20dog">https://www.thebay.com/product/hot-sox-mens-balloon-dogs-crew-socks-0600092625793.html?type=Featured%20Items&term=balloon%20dog</a>.</li>
+      </ol>
+
+    </section>
+
+  </body>
+</html>

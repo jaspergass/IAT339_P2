@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>P01 - Style Guide </title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Insect Collective - Checkout Template
+        <a href="index.html"><img src="justsocks.png" alt="justsockslogo" style="float:right;width:130px;height:130px;"></a></h1>
+
+      <!-- NAVIGATION BAR // -->
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="themes.html">THEMES</a></li>
+        <li><a href="artists.html">ARTISTS</a></li>
+        <li><a href="look_book.html">LOOK BOOK</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li style="float:right"><a href="cart.html"> <img src="../img/cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .</a></li>
+      </ul>
+    </header>
+
+      <!-- CHECKOUT CART // -->
+      <h2>Your Cart:</h2>
+
+      <div class="cart">
+        <div class="item">
+          <div class="box-row">
+            <div class="checkout-left">
+              <img src="../img/P6290024.jpg" alt="Red and black beetles on a flower stem.">
+            </div>
+            <div class="checkout-right">
+              <p>Rose Weevil</p>
+              <h4>$15</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="box-row">
+            <div class="checkout-left">
+              <img src="../img/P6120118.jpg" alt="A black fly on a white flower.">
+            </div>
+            <div class="checkout-right">
+              <p>Bee Fly</p>
+              <h4>$30</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="box-row">
+            <div class="checkout-left">
+              <img src="../img/P6120094.jpg" alt="A yellow and brown fly with big eyes.">
+            </div>
+            <div class="checkout-right">
+              <p>Hoverfly</p>
+              <h4>$18</h4>
+            </div>
+          </div>
+        </div>
+        <h4>Cart Subtotal: $63</h4>
+      </div>
+
+      <!-- PAYMENT FORM // -->
+      <h2>Proceed to Payment:</h2>
+
+      <form>
+        <div>
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" name="full name">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <div>
+          <label for="credit_card_no.">Credit Card No.:</label>
+          <input type="text" id="credit_card_no." name="credit card no.">
+          <input type="radio" id="visa" name="payment_form" value="VISA">
+          <label for="visa">VISA</label>
+          <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+            <label for="mastercard">MasterCard</label>
+          <input type="radio" id="paypal" name="payment_form" value="Paypal">
+            <label for="paypal">PayPal</label>
+        </div>
+        <div>
+          <label for="expiration_date">Expiration Date:</label>
+          <input type="date" id="expiration_date" name="expiration date">
+          <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+        </div>
+      </form>
+      <h3>--------------------<h3>
+      <h2>THANK YOU!<h2>
+  </body>
+</html>
