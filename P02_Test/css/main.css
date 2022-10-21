@@ -17,7 +17,7 @@ body {
 }
 
 img{
-  height: auto; 
+  height: auto;
   max-width:100%;
 }
 
@@ -107,7 +107,7 @@ h2 {
 
 h3 {
   margin-top: 0.25rem;
-  color: rgb(191, 228, 40);
+  color: #6E8015;
 }
 
 h4 {
@@ -156,5 +156,3 @@ form {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
-
