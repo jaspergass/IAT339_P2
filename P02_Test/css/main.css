@@ -118,6 +118,39 @@ h4 {
   COMBINED ELEMENTS -------------------
 */
 /* This portion of code is drawn from w3schools.com/css/css_navbar_horizontal */
+.navbar{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.button-nav{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button-nav:hover:not(.active){
+  background-color: rgb(191, 228, 40);
+  color: black;
+}
+
+.button-nav:last-of-type{
+  margin-left:auto;
+}
+
+.button-nav .nav-img{
+  width:100%;
+  max-width:1.5em;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
