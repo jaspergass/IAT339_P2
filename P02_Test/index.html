@@ -21,10 +21,10 @@
         <a href="index.html"><img src="./img/logo.png" alt="logo" style="float:right;width:5%;"></a></h1>
       <!-- NAVIGATION BAR // -->
       <nav class="navbar">
-        <a class="button-nav" href="index.html">Home</a>
-        <a class="button-nav" href="html/about_us.html">About Us</a>
-        <a class="button-nav" href="html/product_listing.html">Products template</a>
-        <a class="button-nav" href="html/checkout.html">Cart template<img class ="nav-img" src="img/cart.png" alt="cart_icon"></a>
+        <a class="button-nav" href="index.html">HOME</a>
+        <a class="button-nav" href="html/about.html">ABOUT</a>
+        <a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE</a>
+        <a class="button-nav" href="html/checkout.html">CART TEMPLATE<img class ="nav-img" src="img/cart.png" alt="cart_icon"></a>
       </nav>
     </header>
 
@@ -295,31 +295,25 @@
         <h3>Main Navigation</h3>
 
         <h4>Rendered example:</h4><br>
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="themes.html">THEMES</a></li>
-          <li><a href="artists.html">ARTISTS</a></li>
-          <li><a href="about_us.html">ABOUT US</a></li>
-          <li style="float:right"><a href="cart.html"> <img src="./img/cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .</a></li>
-        </ul>
+        <nav class="navbar">
+          <a class="button-nav" href="index.html">HOME</a>
+          <a class="button-nav" href="html/about.html">ABOUT</a>
+          <a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE</a>
+          <a class="button-nav" href="html/checkout.html">CART TEMPLATE<img class ="nav-img" src="img/cart.png" alt="cart_icon"></a>
+        </nav>
 
         <h4>CSS selector:</h4>
-        <p>
-          ul<br>
-          ul li<br>
-          ul li a<br>
-          ul li a:hover:not(.active)
-        </p>
+        <p>.navbar</p>
+        <p>.button-nav</p>
 
         <h4>Code:</h4>
         <code>
-          &lt;ul><br>
-            &lt;li>&lt;a href="home.html">HOME&lt;/a>&lt;/li><br>
-            &lt;li>&lt;a href="themes.html">THEMES&lt;/a>&lt;/li><br>
-            &lt;li>&lt;a href="artists.html">ARTISTS&lt;/a>&lt;/li><br>
-            &lt;li>&lt;a href="about_us.html">ABOUT US&lt;/a>&lt;/li><br>
-            &lt;li style="float:right">&lt;a href="cart.html">&lt;img src="cart.png" alt="cart_icon" style="float:right;width:18px;height:18px;"> CART .&lt;/a>&lt;/li><br>
-          &lt;/ul>
+          &lt;nav class="navbar"><br>
+            &lt;a class="button-nav" href="index.html">HOME&lt;/a><br>
+            &lt;a class="button-nav" href="html/about.html">ABOUT&lt;/a><br>
+            &lt;a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE&lt;/a><br>
+            &lt;a class="button-nav" href="html/checkout.html">CART TEMPLATE&lt;img class="nav-img" src="img/cart.png" alt="cart_icon"&gt;&lt;/a><br>
+          &lt;/nav>
         </code>
 
       </section>
