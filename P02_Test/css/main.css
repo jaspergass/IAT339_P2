@@ -79,10 +79,11 @@ a:hover {
   color: rgb(191, 228, 40);
 }
 
-/* This portion of code is drawn from www.w3schools.com/howto/howto_css_image_overlay */
-img:hover {
+.img-link:hover,.img-link:hover:focus{
   opacity: 0.3;
 }
+
+
 
 /*
   TEXT ELEMENTS -------------------
@@ -146,10 +147,15 @@ h4 {
   margin-left:auto;
 }
 
-.button-nav .nav-img{
+.nav-img{
   width:100%;
   max-width:1.5em;
   padding-left:1em;
+}
+
+.nav-img:hover,.nav-img:focus{
+  
+  
 }
 
 ul {

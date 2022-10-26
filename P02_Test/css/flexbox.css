@@ -132,3 +132,22 @@
   background-color: #000000;
   color:white;
 }
+
+/* single product page flexbox style */
+
+.product-display{
+  border: 0.1em solid rgb(255, 0, 0);
+  justify-content: center;
+}
+
+.product-display-img{
+  max-width:6em;
+}
+
+.product-page-item {
+  -webkit-flex: 1 1 16em;
+  -ms-flex: 1 1 16em;
+  flex: 1 1 16em;
+  margin:1em 2em;
+  border: 0.1em solid black;
+}
