@@ -1,6 +1,6 @@
 
 
-.list{
+.list, .about, .logo, .checkout{
     /* Set every element to use the border-box model. */
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -9,17 +9,26 @@
     /* Set to display as a flexbox,and to wrap flexbox items responsively. */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .list .product {
+  .list .product, .info {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 20em;
     padding-top: 1rem;
     padding-bottom: 3rem;
     margin: 15px 15px;
+    justify-content: center;
   }
 
-  .cart {
+  .checkout .component{
+    flex-basis: 25em;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin: 40px;
+  }
+
+  .component {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -43,22 +52,30 @@
     padding-left: 1rem;
   }
 
+  .payinfo{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   /* remove top border on first item in checkout cart */
   .item:nth-of-type(1){
     border-top-style:none;
   }
 
-  .checkout-left{
+  .cart-left{
     -webkit-flex: 1 1 30px;
     -ms-flex: 1 1 30px;
     flex: 1 1 30px;
     overflow:auto;
   }
-  .checkout-right{
+  .cart-right{
     -webkit-flex: 4 1 10em;
     -ms-flex: 4 1 10em;
     flex: 4 1 10em;
     margin: 0 0 0 2em;
+    justify-content: center;
   }
 
   .box-row{

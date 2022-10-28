@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
@@ -383,23 +383,37 @@
         <h3>Payment Form</h3>
 
         <h4>Rendered example:</h4><br>
+        <div class="component">
         <form>
-          <label for="full_name">Full Name:</label><br>
-          <input type="text" id="full_name" name="full name"><br><br>
-          <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email"><br><br>
-          <label for="credit_card_no.">Credit Card No.:</label><br>
-          <input type="text" id="credit_card_no." name="credit card no."><br>
-          <input type="radio" id="visa" name="payment_form" value="VISA">
-          <label for="visa">VISA</label>
-          <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
-          <label for="mastercard">MasterCard</label>
-          <input type="radio" id="paypal" name="payment_form" value="Paypal">
-          <label for="paypal">PayPal</label><br><br>
-          <label for="expiration_date">Expiration Date:</label><br>
-          <input type="date" id="expiration_date" name="expiration date"><br><br>
-          <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+          <h2>Payment</h2>
+
+          <div class="payinfo">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full name">
+          </div>
+          <div class="payinfo">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="payinfo">
+            <label for="credit_card_no.">Credit Card No.:</label>
+            <input type="text" id="credit_card_no." name="credit card no.">
+          </div>
+          <div class="payinfo">
+            <input type="radio" id="visa" name="payment_form" value="VISA">
+            <label for="visa">VISA</label>
+            <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+              <label for="mastercard">MasterCard</label>
+            <input type="radio" id="paypal" name="payment_form" value="Paypal">
+              <label for="paypal">PayPal</label>
+          </div>
+          <div class="payinfo">
+            <label for="expiration_date">Expiration Date:</label>
+            <input type="date" id="expiration_date" name="expiration date">
+          </div>
+            <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
         </form>
+        </div>
 
         <h4>CSS selector:</h4>
         <p>
@@ -435,13 +449,15 @@
         <!-- This portion of code is drawn from www.w3schools.com/html/html_images -->
         <h4>Rendered example:</h4><br>
 
-        <div class="cart">
+        <div class="component">
+          <h2>Your Cart</h2>
+
           <div class="item">
             <div class="box-row">
-              <div class="checkout-left">
+              <div class="cart-left">
                 <img src="./img/P6290024.jpg" alt="Red and black beetles on a flower stem.">
               </div>
-              <div class="checkout-right">
+              <div class="cart-right">
                 <p>Rose Weevil</p>
                 <h4>$15</h4>
               </div>
@@ -450,10 +466,10 @@
 
           <div class="item">
             <div class="box-row">
-              <div class="checkout-left">
+              <div class="cart-left">
                 <img src="./img/P6120118.jpg" alt="A black fly on a white flower.">
               </div>
-              <div class="checkout-right">
+              <div class="cart-right">
                 <p>Bee Fly</p>
                 <h4>$30</h4>
               </div>
@@ -462,10 +478,10 @@
 
           <div class="item">
             <div class="box-row">
-              <div class="checkout-left">
+              <div class="cart-left">
                 <img src="./img/P6120094.jpg" alt="A yellow and brown fly with big eyes.">
               </div>
-              <div class="checkout-right">
+              <div class="cart-right">
                 <p>Hoverfly</p>
                 <h4>$18</h4>
               </div>
