@@ -136,8 +136,9 @@
 /* single product page flexbox style */
 
 .product-display{
-  border: 0.1em solid rgb(255, 0, 0);
+  border: 0.1em solid black;
   justify-content: center;
+  border-radius:0.5em;
 }
 
 .product-display-img{
@@ -150,4 +151,9 @@
   flex: 1 1 16em;
   margin:1em 2em;
   border: 0.1em solid black;
+  border-radius:0.5em;
+  padding:1.5em;
+}
+.product-page-item:nth-of-type(2){
+  border-style:none;
 }
