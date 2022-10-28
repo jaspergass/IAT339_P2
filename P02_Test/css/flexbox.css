@@ -12,7 +12,7 @@
     justify-content: space-evenly;
   }
 
-  .list .product {
+  .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 15em;
     padding: 1.5em;
