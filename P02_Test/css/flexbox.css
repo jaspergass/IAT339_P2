@@ -1,6 +1,6 @@
 
 
-.list, .about, .logo, .checkout{
+.list, .about, .logo, .info, .why, .misson, .checkout{
     /* Set every element to use the border-box model. */
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -9,11 +9,11 @@
     /* Set to display as a flexbox,and to wrap flexbox items responsively. */
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     justify-content: center;
+<<<<<<< HEAD
   }
 
-  .list .product, .info {
+  .list .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 20em;
     padding-top: 1rem;
@@ -32,6 +32,12 @@
   .component {
 =======
     justify-content: space-evenly;
+    border: 0.1em solid black;
+    border-radius:0.5em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .product {
@@ -56,7 +62,7 @@
     margin-right:auto;
     text-align: center;
   }
-  
+
 
   .cart {
 >>>>>>> main
