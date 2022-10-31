@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Checkout page</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Insect Collective - Checkout Template
+        <a href="index.html"><img src="../img/logo.png" alt="logo" style="float:right;width:5%;"></a></h1>
+
+      <!-- NAVIGATION BAR // -->
+      <nav class="navbar">
+        <a class="button-nav" href="../index.html">HOME</a>
+        <a class="button-nav" href="../html/about.html">ABOUT</a>
+        <a class="button-nav" href="../html/checkout.html">CART<img class ="nav-img" src="../img/cart-w.png" alt="cart_icon"></a>
+      </nav>
+    </header>
+
+      <!-- CHECKOUT CART // -->
+    <div class="checkout">
+
+      <div class="component">
+        <h2>Your Cart</h2>
+
+        <div class="item">
+          <div class="box-row">
+            <div class="cart-left">
+              <img class="product-img" src="../img/beetles/green-beetle-white-background-close-up_360917-341.jpg" alt="A red and blue beetle on a green flower bud.">
+            </div>
+            <div class="cart-right">
+              <p>Rose Weevil</p>
+              <h4>$15</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="box-row">
+            <div class="cart-left">
+              <img class="product-img img-link" src="../img/mantis/green-praying-mantis-isolated-white-background_221662-384.jpg" alt="Red and black beetles on a flower stem.">
+            </div>
+            <div class="cart-right">
+              <p>Bee Fly</p>
+              <h4>$30</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="box-row">
+            <div class="cart-left">
+              <img class="product-img img-link" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg" alt="Red and black beetles on a flower stem.">
+            </div>
+            <div class="cart-right">
+              <p>Hoverfly</p>
+              <h4>$18</h4>
+            </div>
+          </div>
+        </div>
+        <h4>Cart Subtotal: $63</h4>
+      </div>
+
+      <!-- PAYMENT FORM // -->
+      <div class="component">
+      <form>
+        <h2>Payment</h2>
+
+        <div class="payinfo">
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" name="full name">
+        </div>
+        <div class="payinfo">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <div class="payinfo">
+          <label for="credit_card_no.">Credit Card No.:</label>
+          <input type="text" id="credit_card_no." name="credit card no.">
+        </div>
+        <div class="payinfo">
+          <input type="radio" id="visa" name="payment_form" value="VISA">
+          <label for="visa">VISA</label>
+          <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+            <label for="mastercard">MasterCard</label>
+          <input type="radio" id="paypal" name="payment_form" value="Paypal">
+            <label for="paypal">PayPal</label>
+        </div>
+        <div class="payinfo">
+          <label for="expiration_date">Expiration Date:</label>
+          <input type="date" id="expiration_date" name="expiration date">
+        </div>
+          <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+      </form>
+      </div>
+    </div>
+      <h2>THANK YOU!<h2>
+  </body>
+</html>
