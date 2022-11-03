@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Beetle product page</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="nav-box">
+        <div class="nav-box nav-title">
+          <h1>Insect Collective</h1>
+          <a href="../index.html"><img class="logo-img" src="../img/logo.png" alt="logo"></a>
+        </div>
+        <!-- NAVIGATION BAR // -->
+        <nav class="navbar nav-box-bar">
+          <a class="button-nav" href="../index.html">HOME</a>
+          <a class="button-nav" href="../html/about.html">ABOUT</a>
+          <a class="button-nav" href="../html/checkout.html">CART<img class ="nav-img" src="../img/cart-w.png"></a>
+        </nav>
+      </div>
+    </header>
+    <!-- Back button -->
+    <a href="../index.html"><button class="button">Back</button></a>
+
+    <section>
+        <div class="box-wrap">
+          <div class="product-page-item">
+            <!-- left side should have product name and details -->
+            <div class="product-title">
+              <h3>Stag Beetle</h3>
+              <h4>20$</h4>
+            </div>
+            <p>Beetles need a different environment than their larvae, but what kind of environment depends on the species of beetle you have. Generally the following enclosure will suffice:
+                A glass or plastic tank / terrarium with a layer of 2 inches or more of humid soil and a few pieces or wood or bark on this soil. The tank should be at least 5 times the length of the beetle in height and in width to ensure it can walk around enough, but a bigger space is ALWAYS better. Fill the terrarium with some branches or twigs where the beetle can walk on. When you heat the terrarium with a light bulb, the beetle can move on the twigs closer or farther from the light to choose its preferred temperature. You can put some live plants in the enclosure, but it is possible that the beetles will slowly destroy it or eat it.</p>
+            <button class="button center" onclick="alert('Added to cart!')">Add to Cart</button>
+          </div>
+          <div class="product-page-item">
+            <!-- right side has a big image of the product. at the bottom, there are previews of another image of the product  -->
+            <img src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg">
+            <div class="box-row product-display">
+              <img class="arrow-img" src="../img/arrow-left.png">
+              <img class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg">
+              <img class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2657.jpg">
+              <img class="arrow-img" src="../img/arrow-right.png">
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- Reviews -->
+      
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <div class="review-box">
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-5.png">
+            <h4>Fantastic first beetle</h4>
+          </div>
+          <p>Greg L.</p>
+          <p>I have kept these beetles before and they are a great place to start for any amature bug enthusiast. These specimens arrived safely and are doing well. I will be purchasing from this site again.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-5.png">
+            <h4>So excited</h4>
+          </div>
+          <p>Jade S.</p>
+          <p>I have been wanting a pet beetle for years. I am glad I came across this site, I am so excited!</p>
+        </div>
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-4.png">
+            <h4>Pretty</h4>
+          </div>
+          <p>Hannah M.</p>
+          <p>These stag beetles are just super beautiful. I wish they were more active.</p>
+        </div>
+
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-4.png">
+            <h4>Good</h4>
+          </div>
+          <p>Jen K.</p>
+          <p>The beetle was smaller than I was expecting. I am not sure if they grow in size but I was hoping for something bigger.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>
