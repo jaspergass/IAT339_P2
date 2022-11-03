@@ -159,9 +159,17 @@ h4 {
   
 }
 
-.nav-img:hover,.nav-img:focus{
+.stars-img{
+  width:100%;
+  max-width:6em;
 
+}
 
+.arrow-img{
+  width:100%;
+  max-height:4em;
+  width:auto;
+  align-self:center;
 }
 
 ul {
