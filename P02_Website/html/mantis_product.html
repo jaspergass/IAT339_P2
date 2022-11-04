@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Mantis product page</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="nav-box">
+        <div class="nav-box nav-title">
+          <h1>Insect Collective</h1>
+          <a href="../index.html"><img class="logo-img" src="../img/logo.png" alt="logo"></a>
+        </div>
+        <!-- NAVIGATION BAR // -->
+        <nav class="navbar nav-box-bar">
+          <a class="button-nav" href="../index.html">HOME</a>
+          <a class="button-nav" href="../html/about.html">ABOUT</a>
+          <a class="button-nav" href="../html/checkout.html">CART<img class ="nav-img" src="../img/cart-w.png"></a>
+        </nav>
+      </div>
+    </header>
+    <!-- Back button -->
+    <a href="../index.html"><button>Back</button></a>
+
+    <section>
+        <div class="box-wrap">
+          <div class="product-page-item">
+            <!-- left side should have product name and details -->
+            <div class="product-title">
+              <h3>Chinese Mantis</h3>
+              <h4>10$</h4>
+            </div>
+            <p>The Chinese Mantis is a very common mantis species. Originally it only occurred in Asia, but because of international commerce it has been introduced in North America. There this species is thriving and can be found in almost the whole continent.</p>
+            <p>The Chinese Mantis is a very easy mantis to take care of, because it does not require a lot of special temperatures or humidity. The ideal temperature is about 25 °C, but a temperature between 22 and 30 ° C is perfect too. At night the temperature can be allow to drop, but it should be at least 17 ° C to ensure proper development. When exposed to temperatures below 8 °C a Chinese mantis may not survive.
+              The Chinese Mantis does not need a lot of humidity. Keep the mantis in a well ventilated enclosure and spray with water two times a week. The mantis will drink from the water droplets when it is thirsty.</p>
+            <button class="center" onclick="alert('Added to cart!')">Add to Cart</button>
+          </div>
+          <div class="product-page-item">
+            <!-- right side has a big image of the product. at the bottom, there are previews of another image of the product  -->
+            <img src="../img/mantis/green-praying-mantis-isolated-white-background_221662-384.jpg">
+            <div class="box-row product-display">
+              <img class="arrow-img" src="../img/arrow-left.png">
+              <img class="product-display-img" src="../img/mantis/green-praying-mantis-isolated-white-background_221662-384.jpg">
+              <img class="product-display-img" src="../img/mantis/green-praying-mantis-isolated-white-background_221662-394.jpg">
+              <img class="arrow-img" src="../img/arrow-right.png">
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- Reviews -->
+      
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <div class="review-box">
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-5.png">
+            <h4>In love with my mantis</h4>
+          </div>
+          <p>Lisa C.</p>
+          <p>She seems healthy, and is really beautiful. I highly reccomend.</p>
+        </div>
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-5.png">
+            <h4>Healthy!</h4>
+          </div>
+          <p>Katheryn L.</p>
+          <p>I’m having a blast with my new mantids! They arrived fairly quickly, and they were all safe and healthy. They’ve adjusted well to their new habitat and I’m absolutely thrilled with them!</p>
+        </div>
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-4.png">
+            <h4>Nice</h4>
+          </div>
+          <p>Josh. J</p>
+          <p>Very cool.</p>
+        </div>
+
+
+        <div class="review-item">
+          <div class="product-title">
+            <img class="stars-img" src="../img/stars-5.png">
+            <h4>Soooo cool</h4>
+          </div>
+          <p>Sam B.</p>
+          <p>I am super excited for them to molt and reach full size. They are so cool when they are tiny too. Shipment arrived safely and it was well packed, hopefully my mantids will reach adulthood.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>P01 - Style Guide </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Insect Collective - Style Guide
+
+        <a href="index.html"><img src="./img/logo.png" alt="logo" style="float:right;width:5%;"></a></h1>
+      <!-- NAVIGATION BAR // -->
+      <nav class="navbar">
+        <a class="button-nav" href="index.html">HOME</a>
+        <a class="button-nav" href="html/about.html">ABOUT</a>
+        <a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE</a>
+        <a class="button-nav" href="html/checkout.html">CART TEMPLATE<img class ="nav-img" src="img/cart-w.png"></a>
+
+      </nav>
+    </header>
+
+    <!-- Brand styling section -->
+    <section class="element">
+      <h3>Brand Color</h3>
+      <div class="box-wrap">
+        <div class="box-color">
+          <p>#EFE8E1</p>
+        </div>
+        <div class="box-color">
+          <p>#BFE428</p>
+        </div>
+        <div class="box-color">
+          <p>#6E8015</p>
+        </div>
+        <div class="box-color">
+          <p>#000000</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_links -->
+        <h4>Rendered example:</h4><br>
+        <p>
+          Here is an in-text link to
+          <a href="https://en.wikipedia.org/wiki/Beetle">learn more about beetles!</a>
+        </p>
+
+        <h4>CSS selector:</h4>
+        <p>a:hover</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;p><br>
+          Here is an in-text link to<br>
+          &lt;a href="https://en.wikipedia.org/wiki/Beetle">learn more about beetles!&lt;/a><br>
+          &lt;/p>
+        </code>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <!-- This portion of code is drawn from the style guide template provided -->
+        <h4>Rendered example:</h4><br>
+        <nav>
+          <a href="index.html">Home</a>
+        </nav>
+
+        <h4>CSS selector:</h4>
+        <p>nav a:hover, nav a:focus</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;nav>&lt;a href="index.html">Home&lt;/a>&lt;/nav>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/tags/tag_button -->
+        <h4>Rendered example:</h4><br>
+        <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+        <button class="button" onclick="alert('Cart Reset!')">Reset</button>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .button<br>
+          .button:hover, .button:focus
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;button class="button" onclick="alert('Order Confirmed!')">Submit&lt;/button><br>
+          &lt;button class="button" onclick="alert('Cart Reset!')">Reset&lt;/button><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_form_input_types -->
+        <h4>Rendered example:</h4><br>
+        <label for="label">Label:</label><br>
+        <input type="text" id="label" name="label">
+
+        <h4>CSS selector:</h4>
+        <p>
+          input<br>
+          input:focus<br>
+          input:hover
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;label for="label">Label:&lt;/label>&lt;br><br>
+          &lt;input type="text" id="label" name="label"><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/tags/att_input_type_radio -->
+        <h4>Rendered example:</h4><br>
+          <input type="radio" id="radio" value="LABEL">
+          <label for="label">Label</label>
+
+        <h4>CSS selector:</h4>
+        <p>
+          form
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;input type="radio" id="label" value="Label"><br>
+          &lt;label for="label">Label&lt;/label><br>
+        </code>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_links -->
+        <h4>Rendered example:</h4><br>
+        <a href="https://nocoldfeet.co/blogs/news/6-sock-rules-you-should-never-break">
+          <img src="./img/logo.png" alt="6-sock-rules-you-should-never-break" style="width:20%">
+        </a>
+
+        <h4>CSS selector:</h4>
+        <p>img:hover</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;a href="https://nocoldfeet.co/blogs/news/6-sock-rules-you-should-never-break"><br>
+            &lt;img src="./img/logo.png" alt="6-sock-rules-you-should-never-break" style="width:20%"><br>
+          &lt;/a>
+        </code>
+
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_headings -->
+        <h4>Rendered example:</h4>
+        <h2>Heading 1</h2>
+        <h3>Heading 2</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 4</h5>
+
+        <h4>CSS selector:</h4>
+        <p>
+          h2<br>
+          h3<br>
+          h4<br>
+          h5<br>
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;h2>Heading 1&lt;/h2><br>
+          &lt;h3>Heading 2&lt;/h3><br>
+          &lt;h4>Heading 3&lt;/h4><br>
+          &lt;h5>Heading 4&lt;/h5>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>Rendered example:</h4><br>
+        <p>
+          The most stylish of men know that socks are one of the most important elements of style.
+          Important men know the importance of wearing socks properly. They do this by adhering to
+          a set of tried and true rules about wearing socks. While the socks themselves will change
+          over the years, these rules never will. Here are 6 sock rules you should never break.
+        </p>
+
+        <h4>CSS selector:</h4>
+        <p>p
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;p><br>
+          The most stylish of men know that socks are one of the most important elements of style.
+          Important men know the importance of wearing socks properly. They do this by adhering to
+          a set of tried and true rules about wearing socks. While the socks themselves will change
+          over the years, these rules never will. Here are 6 sock rules you should never break.<br>
+          &lt;/p>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_lists_ordered -->
+        <h4>Rendered example:</h4>
+        <ol type="1">
+          <li>NO HOLES. EVER.</li>
+          <li>DON’T HOLD ON TO ORPHANS</li>
+          <li>HAVE SOME FUN IN YOUR SOCK DRAWER</li>
+        </ol>
+
+        <h4>CSS selector:</h4>
+        <p>
+          ol<br>
+          ol li
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;ol type="1"><br>
+            &lt;li>NO HOLES. EVER.&lt;/li><br>
+            &lt;li>DON’T HOLD ON TO ORPHANS&lt;/li><br>
+            &lt;li>HAVE SOME FUN IN YOUR SOCK DRAWER&lt;/li><br>
+          &lt;/ol>
+        </code>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+
+        <!-- This portion of code is drawn from the style guide template provided -->
+        <h3>Main Navigation</h3>
+
+        <h4>Rendered example:</h4><br>
+        <nav class="navbar">
+          <a class="button-nav" href="index.html">HOME</a>
+          <a class="button-nav" href="html/about.html">ABOUT</a>
+          <a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE</a>
+          <a class="button-nav" href="html/checkout.html">CART TEMPLATE<img class ="nav-img" src="img/cart.png" alt="cart_icon"></a>
+        </nav>
+
+        <h4>CSS selector:</h4>
+        <p>.navbar</p>
+        <p>.button-nav</p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;nav class="navbar"><br>
+            &lt;a class="button-nav" href="index.html">HOME&lt;/a><br>
+            &lt;a class="button-nav" href="html/about.html">ABOUT&lt;/a><br>
+            &lt;a class="button-nav" href="html/product_listing.html">PRODUCTS TEMPLATE&lt;/a><br>
+            &lt;a class="button-nav" href="html/checkout.html">CART TEMPLATE&lt;img class="nav-img" src="img/cart.png" alt="cart_icon"&gt;&lt;/a><br>
+          &lt;/nav>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>Rendered example:</h4>
+
+        <section id="mantis">
+          <h3 class="center">Mantis</h3>
+          <div class="box-row">
+            <div class="product">
+              <img class="product-img img-link" src="./img/mantis/green-praying-mantis-isolated-white-background_221662-384.jpg" alt="Red and black beetles on a flower stem.">
+              <h4 class="center">Mantis | $15</h4>
+              <button class="button center" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img class="product-img img-link" src="./img/mantis/ezgif-2-87dd648891.jpg" alt="A red and blue beetle on a green flower bud.">
+              <h4 class="center">Mantis | $20</h4>
+              <button class="button center" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img class="product-img img-link" src="./img/mantis/young-orchid-mantis-hymenopus-coronatus-front-white-background_191971-26144.jpg" alt="A black fly on a white flower.">
+              <h4 class="center">Mantis | $30</h4>
+              <button class="button center" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img class="product-img img-link" src="./img/mantis/young-orchid-mantis-hymenopus-coronatus-front-white_191971-22311.jpg" alt="A shiny bright green fly with black bands.">
+              <h4 class="center">Mantis | $15</h4>
+              <button class="button center" onclick="alert('Added to cart!')">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+
+        <h4>CSS selector:</h4>
+        <p>
+          img:hover<br>
+          .list<br>
+          .list.product<br>
+          .button<br>
+          .button:hover, .button:focus
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="list"><br>
+            &lt;div class="product"><br>
+              &lt;img src="./img/P6290024.jpg" alt="Red and black beetles on a flower stem." style="width:50%"><br>
+              &lt;h4>Rose Weevil | $15&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Added to cart!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="product"><br>
+              &lt;img src="./img/P6120110.jpg" alt="A red and blue beetle on a green flower bud." style="width:50%"><br>
+              &lt;h4>Flower Beetle | $20&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Added to cart!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+            &lt;div class="product"><br>
+              &lt;img src="./img/P6120118.jpg" alt="A black fly on a white flower." style="width:50%"><br>
+              &lt;h4>Bee Fly | $30&lt;/h4><br>
+              &lt;button class="button" onclick="alert('Added to cart!')">Add to Cart&lt;/button><br>
+            &lt;/div><br>
+          &lt;/div>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>Rendered example:</h4><br>
+        <div class="component">
+        <form>
+          <h2>Payment</h2>
+
+          <div class="payinfo">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full name">
+          </div>
+          <div class="payinfo">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="payinfo">
+            <label for="credit_card_no.">Credit Card No.:</label>
+            <input type="text" id="credit_card_no." name="credit card no.">
+          </div>
+          <div class="payinfo">
+            <input type="radio" id="visa" name="payment_form" value="VISA">
+            <label for="visa">VISA</label>
+            <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+              <label for="mastercard">MasterCard</label>
+            <input type="radio" id="paypal" name="payment_form" value="Paypal">
+              <label for="paypal">PayPal</label>
+          </div>
+          <div class="payinfo">
+            <label for="expiration_date">Expiration Date:</label>
+            <input type="date" id="expiration_date" name="expiration date">
+          </div>
+            <button class="button" onclick="alert('Order Confirmed!')">Submit</button>
+        </form>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          form
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;form><br>
+            &lt;label for="full_name">Full Name:&lt;/label><br>
+            &lt;input type="text" id="full_name" name="full name">&lt;br><br>
+            &lt;label for="email">Email:&lt;/label><br>
+            &lt;input type="text" id="email" name="email">&lt;br><br>
+            &lt;label for="credit_card_no.">Credit Card No.:&lt;/label><br>
+            &lt;input type="text" id="credit_card_no." name="credit card no."><br>
+            &lt;input type="radio" id="visa" name="payment_form" value="VISA">
+            &lt;label for="visa">VISA&lt;/label>
+            &lt;input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+            &lt;label for="mastercard">MasterCard&lt;/label>
+            &lt;input type="radio" id="paypal" name="payment_form" value="Paypal">
+            &lt;label for="paypal">PayPal&lt;/label>&lt;br><br>
+            &lt;label for="expiration_date">Expiration Date:&lt;/label><br>
+            &lt;input type="date" id="expiration_date" name="expiration date">&lt;br><br>
+            &lt;button class="button" onclick="alert('Order Confirmed!')">Submit&lt;/button><br>
+          &lt;/form>
+        </code>
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <!-- This portion of code is drawn from www.w3schools.com/html/html_images -->
+        <h4>Rendered example:</h4><br>
+
+        <div class="component">
+          <h2>Your Cart</h2>
+
+          <div class="item">
+            <div class="box-row">
+              <div class="cart-left">
+                <img class="product-img img-link" src="./img/mantis/green-praying-mantis-isolated-white-background_221662-384.jpg" alt="Red and black beetles on a flower stem.">
+              </div>
+              <div class="cart-right">
+                <p>Rose Weevil</p>
+                <h4>$15</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="box-row">
+              <div class="cart-left">
+                <img class="product-img img-link" src="./img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg" alt="Red and black beetles on a flower stem.">
+              </div>
+              <div class="cart-right">
+                <p>Bee Fly</p>
+                <h4>$30</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="box-row">
+              <div class="cart-left">
+                <img class="product-img" src="./img/beetles/green-beetle-white-background-close-up_360917-341.jpg" alt="A red and blue beetle on a green flower bud.">
+              </div>
+              <div class="cart-right">
+                <p>Hoverfly</p>
+                <h4>$18</h4>
+              </div>
+            </div>
+          </div>
+          <h4>Cart Subtotal: $63</h4>
+        </div>
+
+        <h4>CSS selector:</h4>
+        <p>
+          .cart<br>
+          .item
+        </p>
+
+        <h4>Code:</h4>
+        <code>
+          &lt;div class="cart"><br>
+            &lt;div class="item"><br>
+              &lt;div class="box-row"><br>
+                &lt;div class="checkout-left"><br>
+                  &lt;img src="./img/P6290024.jpg" alt="Red and black beetles on a flower stem."><br>
+                &lt;/div><br>
+                &lt;div class="checkout-right"><br>
+                  &lt;p>Rose Weevil&lt;/p><br>
+                  &lt;h4>$15&lt;/h4><br>
+                &lt;/div><br>
+              &lt;/div><br>
+            &lt;/div><br>
+
+            &lt;div class="item"><br>
+              &lt;div class="box-row"><br>
+                &lt;div class="checkout-left"><br>
+                  &lt;img src="./img/P6120118.jpg" alt="A black fly on a white flower."><br>
+                &lt;/div><br>
+                &lt;div class="checkout-right"><br>
+                  &lt;p>Bee Fly&lt;/p><br>
+                  &lt;h4>$30&lt;/h4><br>
+                &lt;/div><br>
+              &lt;/div><br>
+            &lt;/div><br>
+
+            &lt;div class="item"><br>
+              &lt;div class="box-row"><br>
+                &lt;div class="checkout-left"><br>
+                  &lt;img src="./img/P6120094.jpg" alt="A yellow and brown fly with big eyes."><br>
+                &lt;/div><br>
+                &lt;div class="checkout-right"><br>
+                  &lt;p>Hoverfly&lt;/p><br>
+                  &lt;h4>$18&lt;/h4><br>
+                &lt;/div><br>
+              &lt;/div><br>
+            &lt;/div><br>
+            &lt;h4>Cart Subtotal: $63&lt;/h4><br>
+          &lt;/div>
+        </code>
+
+      </section>
+
+    </section>
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ol>
+        <li>Paul, Renner. Designer. 1927. <strong>Futura [Font]</strong>. Retrieved from <a href="https://fonts.adobe.com/fonts/futura-pt">https://fonts.adobe.com/fonts/futura-pt</a></li>
+        <li>Pngkey. Website. 2022. <strong>Cart [Icon]</strong>. Retrieved from <a href="https://www.pngkey.com/maxpic/u2w7r5t4a9u2a9w7/">https://www.pngkey.com/maxpic/u2w7r5t4a9u2a9w7/</a>.</li>
+      </ol>
+
+    </section>
+
+  </body>
+</html>

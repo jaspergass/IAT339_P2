@@ -1,0 +1,191 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: Futura;
+  padding: 7em;
+}
+
+.element {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+}
+
+img{
+  height: auto;
+  max-width:100%;
+}
+
+/* Add space between <section> elements */
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for buttons */
+/*  This portion of code is drawn from the style guide template provided */
+button {
+  background-color: black;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+  color: white;
+  padding: 1em 1.5em;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1em 0em 0em 0em;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background-color: rgb(191, 228, 40);
+  color: black;
+}
+
+
+/* This portion of code is drawn from www.w3schools.com/css/css_form */
+input {
+  padding: 0.8em 1em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+}
+
+input:hover {
+  border: 0.1em solid rgb(191, 228, 40);
+}
+
+input:focus {
+  border: 0.1em solid black;
+}
+
+nav a:hover, nav a:focus {
+  color: rgb(191, 228, 40);
+}
+
+/* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors*/
+a:hover {
+  color: rgb(191, 228, 40);
+}
+
+.img-link:hover,.img-link:hover:focus{
+  opacity: 0.3;
+}
+
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+a{
+  color: black;
+}
+
+code {
+  background-color: #efe8e1;
+  padding: 2rem;
+  display: block;
+}
+
+h1{
+  text-align: center;
+  margin:0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+h3 {
+  margin-top: 0.25rem;
+  color: #6E8015;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+/* This portion of code is drawn from w3schools.com/css/css_navbar_horizontal */
+.navbar{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  border-radius:0.5em;
+}
+
+.button-nav{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em 1.5em;
+  text-decoration: none;
+}
+
+.button-nav:hover:not(.active){
+  background-color: rgb(191, 228, 40);
+  color: black;
+}
+
+.button-nav:last-of-type{
+  margin-left:auto;
+}
+
+.nav-img{
+  width:100%;
+  max-width:1.5em;
+  padding-left:1em;
+}
+
+.logo-img{
+  width:100%;
+  max-width:3em;
+  
+}
+
+.stars-img{
+  width:100%;
+  max-width:6em;
+
+}
+
+.arrow-img{
+  width:100%;
+  max-height:4em;
+  width:auto;
+  align-self:center;
+}
+
+
+
+form {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.italic{
+  font-style:italic;
+}

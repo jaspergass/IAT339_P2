@@ -1,0 +1,196 @@
+
+
+.list, .about, .logo, .info, .why, .misson, .checkout{
+    /* Set every element to use the border-box model. */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* Set to display as a flexbox,and to wrap flexbox items responsively. */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+<<<<<<< HEAD
+  }
+
+  .list .product {
+    /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
+    flex-basis: 20em;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin: 15px 15px;
+    justify-content: center;
+  }
+
+  .checkout .component{
+    flex-basis: 25em;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin: 40px;
+  }
+
+  .component {
+=======
+    justify-content: space-evenly;
+    border: 0.1em solid black;
+    border-radius:0.5em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .product {
+    /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
+    flex-basis: 15em;
+    padding: 1.5em;
+    margin: 0.8em 0.8em;
+    border: 0.1em solid black;
+    border-radius:0.5em;
+  }
+
+  .product-img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+
+  .center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+  }
+
+
+  .cart {
+>>>>>>> main
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .item {
+    -webkit-flex: 1 1 2em;
+	  -ms-flex: 1 1 2em;
+	  flex: 1 1 2em;
+	  margin:1em 2em;
+    border-top-width: 0.1rem;
+    border-top-style: solid;
+    border-top-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .payinfo{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* remove top border on first item in checkout cart */
+  .item:nth-of-type(1){
+    border-top-style:none;
+  }
+
+  .cart-left{
+    -webkit-flex: 1 1 30px;
+    -ms-flex: 1 1 30px;
+    flex: 1 1 30px;
+    overflow:auto;
+  }
+  .cart-right{
+    -webkit-flex: 4 1 10em;
+    -ms-flex: 4 1 10em;
+    flex: 4 1 10em;
+    margin: 0 0 0 2em;
+    justify-content: center;
+  }
+
+  .box-row{
+    display: -webkit-flex; /* For support in a series of Webkit browsers */
+    display: -ms-flex; /* For support in IE 10 */
+    display: flex;
+
+    -webkit-flex-wrap: row;
+    -ms-flex-wrap: row;
+    flex-wrap: row;
+
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+  }
+
+  .box-wrap{
+    display: -webkit-flex; /* For support in a series of Webkit browsers */
+    display: -ms-flex; /* For support in IE 10 */
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+  }
+
+  /* Colour boxes */
+.box-color{
+	-webkit-flex: 1 1 10em;
+	-ms-flex: 1 1 10em;
+	flex: 1 1 10em;
+  padding: 1em;
+
+}
+
+.box-color:nth-of-type(1) {
+  background-color: #EFE8E1;
+}
+
+.box-color:nth-of-type(2) {
+  background-color: #BFE428;
+}
+
+.box-color:nth-of-type(3) {
+  background-color: #6E8015;
+  color:white;
+}
+
+.box-color:nth-of-type(4) {
+  background-color: #000000;
+  color:white;
+}
+
+/* single product page flexbox style */
+
+.product-display{
+  border: 0.1em solid black;
+  justify-content: center;
+  border-radius:0.5em;
+}
+
+.product-display-img{
+  max-width:6em;
+}
+
+.product-page-item {
+  -webkit-flex: 1 1 16em;
+  -ms-flex: 1 1 16em;
+  flex: 1 1 16em;
+  margin:1em 2em;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+  padding:1.5em;
+}
+.product-page-item:nth-of-type(2){
+  border-style:none;
+}
