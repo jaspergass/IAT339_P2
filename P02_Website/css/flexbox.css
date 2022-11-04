@@ -1,5 +1,9 @@
 
 
+* {
+  box-sizing: border-box;
+}
+
 .list, .about, .logo, .info, .why, .misson, .checkout{
     /* Set every element to use the border-box model. */
     padding-top: 2rem;

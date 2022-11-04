@@ -33,7 +33,7 @@ section {
 
 /* Styling for buttons */
 /*  This portion of code is drawn from the style guide template provided */
-.button {
+button {
   background-color: black;
   border: 0.1em solid black;
   border-radius:0.5em;
@@ -46,7 +46,7 @@ section {
   cursor: pointer;
 }
 
-.button:hover, .button:focus {
+button:hover, button:focus {
   background-color: rgb(191, 228, 40);
   color: black;
 }
@@ -54,8 +54,8 @@ section {
 
 /* This portion of code is drawn from www.w3schools.com/css/css_form */
 input {
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 0.8em 1em;
+  margin: 0.5em 0;
   box-sizing: border-box;
   border: 0.1em solid black;
   border-radius:0.5em;
@@ -172,33 +172,7 @@ h4 {
   align-self:center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  border-radius:0.5em;
-  margin-bottom: 2rem;
-}
 
-ul li {
-  float: left;
-  border-radius: 10px;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover:not(.active) {
-  background-color: rgb(191, 228, 40);
-  color: black;
-}
 
 form {
   padding-top: 2rem;
@@ -209,4 +183,9 @@ form {
   border-radius:0.5em;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+
+.italic{
+  font-style:italic;
 }
