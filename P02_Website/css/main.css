@@ -7,6 +7,24 @@ body {
   padding: 7em;
 }
 
+body {
+  position:relative;
+  font-family: Futura;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin:0;
+}
+
+/* This portion of code is drawn from https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+body::after {
+  content: '';
+  display: block;
+  height: 120px; /* Set same as footer's height */
+}
+
+
 .element {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -149,7 +167,7 @@ h4 {
 
 .nav-img{
   width:100%;
-  max-width:1.5em;
+  max-width:2.2em;
   padding-left:1em;
 }
 

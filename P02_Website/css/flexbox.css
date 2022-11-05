@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.list, .about, .logo, .info, .why, .misson, .checkout{
+.list{
     /* Set every element to use the border-box model. */
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -17,11 +17,33 @@
     justify-content: space-evenly;
     border: 0.1em solid black;
     border-radius:0.5em;
+  }
+
+  .about, .logo, .info, .why, .misson, .checkout{
+    /* Set every element to use the border-box model. */
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  .footer {
+    /* This portion of code is drawn from https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding-bottom: 1.5rem;
+  }
+  
+
+
 
   .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
@@ -70,6 +92,9 @@
   }
 
   .payinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
@@ -239,3 +264,18 @@
   align-items:baseline;
   gap:2em;
 }
+
+/*
+.component {
+  max-width: 50%;
+  min-width: 50%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+*/
