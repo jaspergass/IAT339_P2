@@ -71,42 +71,61 @@
             </div>
           </div>
         </div>
-        <h4>Cart Subtotal: $55</h4>
+        <h4 class="center">Cart Subtotal: $55</h4>
       </div>
 
       <!-- PAYMENT FORM // -->
       <div class="component">
-      <form>
-        <h2>Payment</h2>
+        <form>
+          <h2>Payment</h2>
 
-        <div class="payinfo">
-          <label for="full_name">Full Name:</label>
-          <input type="text" id="full_name" name="full name">
-        </div>
-        <div class="payinfo">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email">
-        </div>
-        <div class="payinfo">
-          <label for="credit_card_no.">Credit Card No.:</label>
-          <input type="text" id="credit_card_no." name="credit card no.">
-        </div>
-        <div class="payinfo">
-          <input type="radio" id="visa" name="payment_form" value="VISA">
-          <label for="visa">VISA</label>
-          <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
-            <label for="mastercard">MasterCard</label>
-          <input type="radio" id="paypal" name="payment_form" value="Paypal">
-            <label for="paypal">PayPal</label>
-        </div>
-        <div class="payinfo">
-          <label for="expiration_date">Expiration Date:</label>
-          <input type="date" id="expiration_date" name="expiration date">
-        </div>
-          <button onclick="alert('Order Confirmed!')">Submit</button>
-      </form>
+          <div class="payinfo">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full name">
+          </div>
+          <div class="payinfo">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="payinfo">
+            <label for="credit_card_no.">Credit Card No.:</label>
+            <input type="text" id="credit_card_no." name="credit card no.">
+          </div>
+          <div class="payinfo">
+            <input type="radio" id="visa" name="payment_form" value="VISA">
+            <label for="visa">VISA</label>
+            <input type="radio" id="mastercard" name="payment_form" value="Mastercard">
+            <label for="mastercard">MasterCard</label>
+            <input type="radio" id="paypal" name="payment_form" value="Paypal">
+            <label for="paypal">PayPal</label>
+          </div>
+          <div class="payinfo">
+            <label for="expiration_date">Expiration Date:</label>
+            <input type="date" id="expiration_date" name="expiration date">
+          </div>
+            <button class="center" onclick="alert('Order Confirmed!')">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+    <h2>THANK YOU!</h2>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <h4>Contact Us</h4>
+      <p>insectcollective@service.com</p>
+      <img class="footer-img" src="../img/insta-icon.png" alt="Company Instagram">
+      <img class="footer-img" src="../img/facebook-icon.png" alt="Company Instagram">
+      <div class="box-row">
+        <a href="../html/citations.html"> 
+          <button>Citations</button>
+        </a>
+        
+        <a href="../P02_StyleGuide/index.html">
+          <button>Style Guide</button>
+        </a>
       </div>
     </div>
-      <h2>THANK YOU!<h2>
-  </body>
+  </footer> 
 </html>
