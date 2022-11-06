@@ -121,12 +121,10 @@ code {
 }
 
 h1{
-  text-align: center;
   margin:0;
 }
 
 h2 {
-  text-align: center;
   margin-top: 0.5rem;
 }
 
@@ -147,9 +145,21 @@ h4 {
   display:flex;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  
   background-color: black;
   border-radius:0.5em;
+  flex-grow:2;
+}
+
+/* adjusts the navigation bar when the screen gets too small */
+@media(max-width:45em){
+  .navbar{
+    flex-wrap:wrap;
+  }
+  .button-nav:last-of-type{
+    margin-left:none;
+    margin-right: auto;
+  }
 }
 
 .button-nav{
@@ -200,6 +210,11 @@ h4 {
   max-width:2em;
 }
 
+.footer button{
+  border-color:white;
+  border:0.1em;
+  border-style:solid;
+}
 .product-img{
   min-width:5em;
 }
@@ -213,3 +228,27 @@ h4 {
   font-style:italic;
 }
 
+/* Banner */
+
+.banner{
+  position: relative;
+  overflow: hidden;
+  max-height: 30em;
+}
+
+.banner .textbox{
+  position: absolute;
+  left:0;
+  top:0;
+  color:white;
+  padding:2em;
+  width:25vw;
+  min-width:auto;
+  background-color:black;
+}
+
+@media(max-width:40em){
+  .textbox{
+    background-color:red;
+  }
+}

@@ -163,14 +163,18 @@
     gap:3em;
 }
 
+@media(max-width:65em){
+  .nav-box{
+    gap:1em;
+  }
+}
+
+
 .nav-title{
   align-items:center;
   gap:1em;
 }
 
-.nav-box-bar{
-  flex-grow:2;
-}
 
   /* Colour boxes */
 .box-color{
@@ -279,3 +283,6 @@
   padding-right: 2rem;
   max-width:30em;
 }
+
+
+
