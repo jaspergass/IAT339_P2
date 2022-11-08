@@ -121,11 +121,17 @@
     -ms-flex-wrap: row;
     flex-wrap: row;
 
+    gap:1em;
+  }
+
+  .space-around{
     -webkit-justify-content: space-around;
     -ms-justify-content: space-around;
     justify-content: space-around;
+  }
 
-    gap:1em;
+  .justify-content-center{
+    justify-content: center;
   }
 
   .footer .box-row{
@@ -208,6 +214,7 @@
 .product-display{
   border: 0.1em solid black;
   border-radius:0.5em;
+  margin-top:1em;
 }
 
 .product-page-item {
@@ -230,6 +237,7 @@
 .product-page-item:nth-of-type(2){
   border-style:none;
 }
+
 
 .review-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
