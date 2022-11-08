@@ -248,8 +248,17 @@ h4 {
   background-color:black;
 }
 
-@media(max-width:40em){
-  .textbox{
-    background-color:red;
-  }
+/* Change the cart image to black on hover. */
+/* Learned about background image property from https://www.w3schools.com/cssref/pr_background-image.php */
+.cartImg{
+  background-image: url("../img/cart-w.png");
+  background-repeat: no-repeat;  
+  height: 1em;
+  background-size:contain;
+  padding-left:2em;
+  margin-top:0.1em;
 }
+.cart-button:hover .cartImg{
+  background-image: url("../img/cart-b.png");
+}
+
