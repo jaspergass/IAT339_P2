@@ -24,7 +24,6 @@ body::after {
   height: 120px; /* Set same as footer's height */
 }
 
-
 .element {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -71,7 +70,7 @@ button:hover, button:focus {
 
 
 /* This portion of code is drawn from www.w3schools.com/css/css_form */
-input {
+input, textarea {
   padding: 0.8em 1em;
   margin: 0.5em 0;
   box-sizing: border-box;
@@ -80,38 +79,31 @@ input {
   width:100%;
 }
 
-input:hover {
-  border: 0.1em solid rgb(191, 228, 40);
-}
+input:hover { border: 0.1em solid rgb(191, 228, 40); }
 
-input:focus {
-  border: 0.1em solid black;
-}
+input:focus { border: 0.1em solid black; }
 
-input[type="radio"]{
-  width:auto;
-}
+input[type="radio"]{ width:auto; }
 
-nav a:hover, nav a:focus {
-  color: rgb(191, 228, 40);
-}
+/* prevents textarea (review box) from being resizable */
+textarea{ resize: none; }
 
-/* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors*/
-a:hover {
-  color: rgb(191, 228, 40);
-}
-
+/* images that are links styling */
 .img-link:hover,.img-link:hover:focus{
   opacity: 0.3;
 }
 
 
-
 /*
   TEXT ELEMENTS -------------------
 */
-a{
-  color: black;
+a{ color: black; }
+
+/* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors */
+a:hover { color: rgb(191, 228, 40); }
+
+nav a:hover, nav a:focus {
+  color: rgb(191, 228, 40);
 }
 
 code {
@@ -120,22 +112,16 @@ code {
   display: block;
 }
 
-h1{
-  margin:0;
-}
+h1{ margin:0; }
 
-h2 {
-  margin-top: 0.5rem;
-}
+h2 { margin-top: 0.5rem; }
 
 h3 {
   margin-top: 0.25rem;
   color: #6E8015;
 }
 
-h4 {
-  margin-bottom: 0.5rem;
-}
+h4 { margin-bottom: 0.5rem; }
 
 /*
   COMBINED ELEMENTS -------------------
@@ -151,7 +137,7 @@ h4 {
   flex-grow:2;
 }
 
-/* adjusts the navigation bar when the screen gets too small */
+/* Adjusts the navigation bar when the screen gets too small */
 @media(max-width:45em){
   .navbar{
     flex-wrap:wrap;
@@ -187,23 +173,21 @@ h4 {
   padding-left:1em;
 }
 
-.logo-img{
-  width:100%;
-  max-width:3em;
-  
+/* Product page images */
+.product-img{
+  min-width:5em;
 }
 
+/* Review stars images */
 .stars-img{
   width:100%;
   max-width:6em;
-
 }
 
-.arrow-img{
+/* Footer styling */
+.logo-img{
   width:100%;
-  max-height:4em;
-  width:auto;
-  align-self:center;
+  max-width:3em;
 }
 
 .footer-img{
@@ -216,18 +200,17 @@ h4 {
   border:0.1em;
   border-style:solid;
 }
-.product-img{
-  min-width:5em;
-}
 
+/* Small product showcase images on single product page */
 .product-display-img{
   max-width:6em;
+  opacity: 0.8;
 }
 
+.product-display-img:hover{ opacity:1; }
 
-.italic{
-  font-style:italic;
-}
+/* Italics */
+.italic{ font-style:italic; }
 
 /* Banner */
 
@@ -258,7 +241,5 @@ h4 {
   padding-left:2em;
   margin-top:0.1em;
 }
-.cart-button:hover .cartImg{
-  background-image: url("../img/cart-b.png");
-}
+.cart-button:hover .cartImg{ background-image: url("../img/cart-b.png"); }
 

@@ -28,9 +28,6 @@
     justify-content: center;
   }
 
-
-
-
   .footer {
     /* This portion of code is drawn from https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
    position: absolute;
@@ -43,7 +40,6 @@
    padding-bottom: 1.5rem;
   }
   
-
   .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 15em;
@@ -52,15 +48,7 @@
     border-radius:0.5em;
   }
 
- 
-
-  .center{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-  }
-
+/* Shopping cart boxes and styling */
   .cart {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -76,6 +64,7 @@
     -webkit-flex: 1 1 2em;
 	  -ms-flex: 1 1 2em;
 	  flex: 1 1 2em;
+    
 	  margin:1em 2em;
     border-top-width: 0.1rem;
     border-top-style: solid;
@@ -86,7 +75,6 @@
   }
 
   .payinfo{
-    
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem;
@@ -112,6 +100,8 @@
     justify-content: center;
   }
 
+
+
   .box-row{
     display: -webkit-flex; /* For support in a series of Webkit browsers */
     display: -ms-flex; /* For support in IE 10 */
@@ -130,14 +120,21 @@
     justify-content: space-around;
   }
 
-  .justify-content-center{
-    justify-content: center;
+  /* centers text and boxes */
+  .center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
   }
 
-  .footer .box-row{
+  .justify-content-center{
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+  }
+
+  .addGap{
     gap:2em;
   }
 
@@ -149,10 +146,6 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
-    -webkit-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
   }
 
 
@@ -182,7 +175,7 @@
 }
 
 
-  /* Colour boxes */
+  /* Colour boxes in style guide */
 .box-color{
 	-webkit-flex: 1 1 10em;
 	-ms-flex: 1 1 10em;
@@ -210,7 +203,6 @@
 }
 
 /* single product page flexbox style */
-
 .product-display{
   border: 0.1em solid black;
   border-radius:0.5em;
@@ -226,10 +218,6 @@
   padding:1.5em;
 }
 
-.space-even-box{
-  display:flex;
-  justify-content: space-evenly;
-}
 .product-page-item:nth-of-type(1){
   flex-grow:2;
 }
@@ -237,7 +225,6 @@
 .product-page-item:nth-of-type(2){
   border-style:none;
 }
-
 
 .review-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */

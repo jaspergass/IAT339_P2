@@ -34,7 +34,7 @@
     <a href="../index.html"><button>Back</button></a>
 
     <section>
-        <div class="box-wrap">
+        <div class="box-wrap space-around">
           <div class="product-page-item">
             <!-- left side should have product name and details -->
             <div class="product-title">
@@ -58,45 +58,60 @@
       <!-- Reviews -->
       
     <section id="reviews">
+      
       <h2>Reviews</h2>
-      <div class="review-box">
-        <div class="review-item">
-          <div class="product-title">
-            <img class="stars-img" src="../img/stars-5.png">
-            <h4>Fantastic first beetle</h4>
-          </div>
-          <p>Greg L.</p>
-          <p>I have kept these beetles before and they are a great place to start for any amature bug enthusiast. These specimens arrived safely and are doing well. I will be purchasing from this site again.</p>
+      <div class="box-wrap space-around">
+        <div class="product-page-item">
+          <h3>Leave a review</h3>
+          <form>
+            <label for="review-title">Review title:</label>
+            <input type="text" id="review-title" name="review-title">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="review">Review:</label>
+            <textarea id="review" name="reveiw" rows="4"></textarea>
+            <button class="center">Publish</button>
+          </form>
         </div>
-
-        <div class="review-item">
-          <div class="product-title">
-            <img class="stars-img" src="../img/stars-5.png">
-            <h4>So excited</h4>
+      
+        <div class="product-page-item review-box">
+          <div class="review-item">
+            <div class="product-title">
+              <img class="stars-img" src="../img/stars-5.png">
+              <h4>Fantastic first beetle</h4>
+            </div>
+            <p>Greg L.</p>
+            <p>I have kept these beetles before and they are a great place to start for any amature bug enthusiast. These specimens arrived safely and are doing well. I will be purchasing from this site again.</p>
           </div>
-          <p>Jade S.</p>
-          <p>I have been wanting a pet beetle for years. I am glad I came across this site, I am so excited!</p>
-        </div>
 
-        <div class="review-item">
-          <div class="product-title">
-            <img class="stars-img" src="../img/stars-4.png">
-            <h4>Pretty</h4>
+          <div class="review-item">
+            <div class="product-title">
+              <img class="stars-img" src="../img/stars-5.png">
+              <h4>So excited</h4>
+            </div>
+            <p>Jade S.</p>
+            <p>I have been wanting a pet beetle for years. I am glad I came across this site, I am so excited!</p>
           </div>
-          <p>Hannah M.</p>
-          <p>These stag beetles are just super beautiful. I wish they were more active.</p>
-        </div>
 
-
-        <div class="review-item">
-          <div class="product-title">
-            <img class="stars-img" src="../img/stars-4.png">
-            <h4>Good</h4>
+          <div class="review-item">
+            <div class="product-title">
+              <img class="stars-img" src="../img/stars-4.png">
+              <h4>Pretty</h4>
+            </div>
+            <p>Hannah M.</p>
+            <p>These stag beetles are just super beautiful. I wish they were more active.</p>
           </div>
-          <p>Jen K.</p>
-          <p>The beetle was smaller than I was expecting. I am not sure if they grow in size but I was hoping for something bigger.</p>
-        </div>
 
+          <div class="review-item">
+            <div class="product-title">
+              <img class="stars-img" src="../img/stars-4.png">
+              <h4>Good</h4>
+            </div>
+            <p>Jen K.</p>
+            <p>The beetle was smaller than I was expecting. I am not sure if they grow in size but I was hoping for something bigger.</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -108,7 +123,7 @@
       <p>insectcollective@service.com</p>
       <img class="footer-img" src="../img/insta-icon.png" alt="Company Instagram">
       <img class="footer-img" src="../img/facebook-icon.png" alt="Company Instagram">
-      <div class="box-row">
+      <div class="justify-content-center">
         <a href="../html/citations.html"> 
           <button>Citations</button>
         </a>
