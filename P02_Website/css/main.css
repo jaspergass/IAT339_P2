@@ -58,7 +58,7 @@ button {
   padding: 1em 1.5em;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
+  font-size: inherit;
   margin: 1em 0em 0em 0em;
   cursor: pointer;
 }
@@ -68,6 +68,10 @@ button:hover, button:focus {
   color: black;
 }
 
+.remove-button{
+  font-size:0.8em;
+  padding:0.8em 0.8em;
+}
 
 /* This portion of code is drawn from www.w3schools.com/css/css_form */
 input, textarea {
@@ -243,3 +247,30 @@ h4 { margin-bottom: 0.5rem; }
 }
 .cart-button:hover .cartImg{ background-image: url("../img/cart-b.png"); }
 
+
+
+/* Product quantity counter adapted from https://dev.to/stackfindover/products-quantity-counter-using-html-css-javascript-663 */
+.counter {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter input {
+  width: 3em;
+  border: 0;
+  font-size:inherit;
+  text-align: center;
+  background: black;
+  color: white;
+  appearance: none;
+  outline: 0;
+}
+.counter span {
+  display: block;
+  padding: 0 0.6em;
+  font-size:inherit;
+  cursor: pointer;
+  color: black;
+  user-select: none;
+}
