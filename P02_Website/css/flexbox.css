@@ -42,27 +42,11 @@
   
   .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
+    flex-basis: 15em;
     padding: 1.5em;
     border: 0.1em solid black;
     border-radius:0.5em;
-    max-width:15em;
-    margin-left:1em;
-    margin-right:1em;
-    margin-bottom:2em;
   }
-
-  /* Break class adapted from https://graffino.com/til/D0xjf7VIGi-how-to-force-a-flexbox-item-to-a-new-row */
-  @media (max-width:82em){
-    .break-four{
-      flex-basis:100%;
-    }
-  } 
-
-  @media(max-width:99em){
-    .break-three{
-      flex-basis:100%;
-    }
-  } 
 
 /* Shopping cart boxes and styling */
   .cart {
@@ -163,6 +147,7 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
 
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
