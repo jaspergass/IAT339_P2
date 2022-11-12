@@ -17,7 +17,7 @@
     border-radius:0.5em;
 }
 
-  .about, .logo, .info, .why, .misson{
+.about, .logo, .info, .why, .misson{
     /* Set every element to use the border-box model. */
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -28,7 +28,7 @@
     justify-content: center;
 }
 
-  .footer {
+.footer {
     /* This portion of code is drawn from https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
    position: absolute;
    left: 0;
@@ -40,7 +40,7 @@
    padding-bottom: 1.5rem;
 }
   
-  .product {
+.product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 15em;
     padding: 1.5em;
@@ -52,18 +52,22 @@
     margin-bottom:2em;
 }
 
-  /* Break class adapted from https://graffino.com/til/D0xjf7VIGi-how-to-force-a-flexbox-item-to-a-new-row */
-  @media (max-width:82em){
-    .break-four{
-      flex-basis:100%;
-    }
-  } 
+.product .addSpace{ /* ensures that all the products listings buttons are aligned */
+  margin-bottom:2.2em;
+}
 
-  @media(max-width:99em){
-    .break-three{
-      flex-basis:100%;
-    }
+  /* Break class adapted from https://graffino.com/til/D0xjf7VIGi-how-to-force-a-flexbox-item-to-a-new-row */
+@media (max-width:82em){
+  .break-four{
+    flex-basis:100%;
   }
+} 
+
+@media(max-width:99em){
+  .break-three{
+    flex-basis:100%;
+  }
+}
 
 /* Shopping cart boxes and styling */
   .cart {
@@ -164,6 +168,8 @@
     flex-wrap: wrap;
   }
 
+
+  
 
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
