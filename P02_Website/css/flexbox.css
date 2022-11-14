@@ -39,7 +39,7 @@
    text-align: center;
    padding-bottom: 1.5rem;
 }
-  
+
 .product {
     /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
     flex-basis: 15em;
@@ -61,7 +61,7 @@
   .break-four{
     flex-basis:100%;
   }
-} 
+}
 
 @media(max-width:99em){
   .break-three{
@@ -85,7 +85,7 @@
     -webkit-flex: 1 1 2em;
 	  -ms-flex: 1 1 2em;
 	  flex: 1 1 2em;
-    
+
 	  margin:1em 2em;
     border-top-width: 0.1rem;
     border-top-style: solid;
@@ -102,6 +102,15 @@
     padding-right: 0.5rem;
   }
 
+  .contactform{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+
   /* remove top border on first item in checkout cart */
   .item:nth-of-type(1){
     border-top-style:none;
@@ -113,14 +122,13 @@
     flex: 1 1 10em;
     overflow:auto;
   }
+
   .cart-right{
     -webkit-flex: 4 1 10em;
     -ms-flex: 4 1 10em;
     flex: 4 1 10em;
     margin: 0 0 0 2em;
   }
-
-
 
   .box-row{
     display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -168,8 +176,6 @@
     flex-wrap: wrap;
   }
 
-
-  
 
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */

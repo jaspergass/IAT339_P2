@@ -21,7 +21,7 @@ body {
 body::after {
   content: '';
   display: block;
-  height: 120px; /* Set same as footer's height */
+  height: 520px; /* Set same as footer's height */
 }
 
 .element {
@@ -103,6 +103,10 @@ textarea{ resize: none; }
 */
 a{ color: black; }
 
+a[href*="citations"], a[href*="StyleGuide"]{
+  color: white;
+}
+
 /* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors */
 a:hover { color: rgb(191, 228, 40); }
 
@@ -135,7 +139,7 @@ h4 { margin-bottom: 0.5rem; }
   display:flex;
   margin: 0;
   padding: 0;
-  
+
   background-color: black;
   border-radius:0.5em;
   flex-grow:2;
@@ -196,7 +200,7 @@ h4 { margin-bottom: 0.5rem; }
 
 .footer-img{
   width:100%;
-  max-width:2em;
+  max-width:1.5em;
 }
 
 .footer button{
@@ -239,7 +243,7 @@ h4 { margin-bottom: 0.5rem; }
 /* Learned about background image property from https://www.w3schools.com/cssref/pr_background-image.php */
 .cartImg{
   background-image: url("../img/cart-w.png");
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   height: 1em;
   background-size:contain;
   padding-left:2em;

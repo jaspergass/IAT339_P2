@@ -17,7 +17,7 @@
   <body>
 
     <header>
-     
+
       <div class="nav-box">
         <div class="nav-box nav-title">
           <h1>Insect Collective</h1>
@@ -32,22 +32,22 @@
           <a class="button-nav cart-button box-row" href="html/checkout.html">CART<div class="cartImg"></div></a>
         </nav>
       </div>
-      
+
     </header>
 
     <!-- BANNER -->
     <section>
-      
+
       <div class="banner">
           <div class="textbox">
-            
+
               <h2>Yes, they're real.</h2>
               <p>Insect Collective is an online live insect retailer for hobbiests and exotic pet enthusiasts. We carry a wide variety of bugs from beetles to butterflies that will suit any insect lover.</p>
               <p>Check out our About page to learn more about us and our mission.</p>
           </div>
           <img src="img/michal-mrozek-y0iTdaWGBxI-unsplash.jpg" alt="A green praying mantis in someones hand.">
       </div>
-      
+
     </section>
 
     <section>
@@ -77,7 +77,7 @@
           <p class="center">$10</p>
           <button class="center" onclick="alert('Added to cart!')">Add to Cart</button>
         </div>
-        
+
         <div class="product">
           <img class="product-img img-link" src="img/mantis/ezgif-2-87dd648891.jpg" alt="A mantis that looks like a leaf.">
           <h4 class="center">Ghost Mantis</h4>
@@ -103,25 +103,34 @@
 
       </div>
     </section>
-  
+
   </body>
 
   <footer>
     <div class="footer">
       <h4>Contact Us</h4>
-      <p>insectcollective@service.com</p>
-      <img class="footer-img" src="img/insta-icon.png" alt="Company Instagram">
-      <img class="footer-img" src="img/facebook-icon.png" alt="Company Instagram">
-      <div class="justify-content-center">
-        <a href="html/citations.html"> 
-          <button>Citations</button>
-        </a>
-        
-        <a href="P02_StyleGuide/index.html">
-          <button>Style Guide</button>
-        </a>
+
+      <div class="contactform">
+        <form>
+          <input type="text" id="fname" name="firstname" placeholder="First Name">
+          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          <input type="text" id="email" name="email" placeholder="Your Email">
+
+          <textarea id="message" name="message" placeholder="Type your message..." style="height:200px"></textarea>
+
+          <button class="center" onclick="alert('We'll get back to you soon!')">Submit</button>
+        </form>
       </div>
+      <p>insectcollective@service.com</p>
+
+      <img class="footer-img" src="./img/insta-icon.png" alt="Company Instagram">
+      <img class="footer-img" src="./img/facebook-icon.png" alt="Company Instagram">
+      <div class="justify-content-center">
+        <a href="./html/citations.html">Citations</a>
+        <a href="./P02_StyleGuide/index.html">Style Guide</a>
+      </div>
+
     </div>
-  </footer> 
-  
+  </footer>
+
 </html>
