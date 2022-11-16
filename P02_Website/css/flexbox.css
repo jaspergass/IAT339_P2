@@ -243,8 +243,9 @@
   flex: 1 1 16em;
   border: 0.1em solid black;
   border-radius:0.5em;
-  padding:1.5em;
+  padding:1.5em;  
 }
+
 
 .product-page-item:nth-of-type(1){
   flex-grow:2;
@@ -252,6 +253,12 @@
 
 .product-page-item:nth-of-type(2){
   border-style:none;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+.noStretch{
+  align-self: start; 
 }
 
 .review-box{
