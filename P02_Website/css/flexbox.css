@@ -246,12 +246,19 @@
   padding:1.5em;
 }
 
+
 .product-page-item:nth-of-type(1){
   flex-grow:2;
 }
 
 .product-page-item:nth-of-type(2){
   border-style:none;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+.noStretch{
+  align-self: start;
 }
 
 .review-box{
