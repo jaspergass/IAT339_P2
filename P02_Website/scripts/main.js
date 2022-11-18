@@ -82,4 +82,6 @@ function bannerloop(){
       document.getElementById("imgban1").style.opacity = "1";
     }, 1000);
     bannerStatus = 1;
+  }
 }
+

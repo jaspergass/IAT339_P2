@@ -95,9 +95,12 @@ textarea{
   resize: none;
 }
 
+.img-link{
+  transition: transform .2s; /* Animation */
+}
 /* images that are links styling */
 .img-link:hover,.img-link:hover:focus{
-  opacity: 0.3;
+  transform: scale(1.2);
 }
 
 
