@@ -115,7 +115,7 @@ textarea{
 */
 a{ color: black; }
 
-a[href*="citations"], a[href*="StyleGuide"]{
+a[href*="citations"], a[href*="StyleGuide"], a[href*="about"]{
   color: white;
 }
 
@@ -240,30 +240,21 @@ footer{
 /* Italics */
 .italic{ font-style:italic; }
 
-/* Image overlay slide adapted from https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp */
 /* Banner */
-.banner {
+
+.banner, .banner2{
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: 25em;
-  min-width:15em;
-  
+  border-radius:0.5em;
 }
 
-.banner2{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-height: 35em;
-  min-width:15em;
-}
-
-.textbox2{
+.textbox, .textbox2{
   background:black;
   position: relative;
   color:white;
   padding:2em;
+  border-radius:0.5em;
 }
 
 /* Change the cart image to black on hover. */
