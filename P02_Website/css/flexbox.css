@@ -47,6 +47,7 @@
   border: 0.1em solid black;
   border-radius:0.5em;
   max-width:15em;
+  min-width: 15em;
   margin-left:1em;
   margin-right:1em;
   margin-bottom:2em;
@@ -104,10 +105,9 @@
 .contactform{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-left: 25rem;
-  margin-right: 25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 30em;
 }
 
 /* remove top border on first item in checkout cart */
@@ -147,6 +147,12 @@
   justify-content: space-around;
 }
 
+.space-evenly{
+  -webkit-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+
 /* centers text and boxes */
 .center{
   display:block;
@@ -174,7 +180,6 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -312,3 +317,15 @@
   padding-right: 2rem;
   max-width:30em;
 }
+
+
+@media(min-width:60em){
+  .textbox{
+    flex: 2 1;
+  }
+  .banner{
+    flex: 1 10 15em;
+  }
+}
+
+

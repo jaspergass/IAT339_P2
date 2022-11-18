@@ -3,19 +3,19 @@
   Default styling for the style guide
 */
 body {
-  font-family: Futura, Arial, Helvetica, sans-serif;
-  padding: 7em;
-}
-
-body {
   position:relative;
-  font-family: Futura;
   padding-top: 5rem;
   padding-bottom: 7rem;
   padding-left: 7rem;
   padding-right: 7rem;
   margin:0;
+  font-family: Futura, Arial, Helvetica, sans-serif;
+  padding-left:7vw;
+  padding-right: 7vw;
+  padding-top:7vh;
+  padding-bottom: 7vh;
 }
+
 
 /* This portion of code is drawn from https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
 body::after {
@@ -205,6 +205,10 @@ h4 { margin-bottom: 0.5rem; }
   max-width:3em;
 }
 
+.about-img{
+  width:30%;
+}
+
 .footer-img{
   width:100%;
   max-width:1.5em;
@@ -214,6 +218,10 @@ h4 { margin-bottom: 0.5rem; }
   border-color:white;
   border:0.1em;
   border-style:solid;
+}
+
+footer{
+  margin-top:6em;
 }
 
 /* Small product showcase images on single product page */
@@ -233,41 +241,24 @@ h4 { margin-bottom: 0.5rem; }
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: 30em;
+  max-height: 25em;
+  min-width:15em;
+  
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: 50%;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: black;
+.banner2{
+  position: relative;
   overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
-
-.banner:hover .overlay {
   width: 100%;
-  left: 0;
+  max-height: 40em;
+  min-width:15em;
 }
 
-.banner .textbox{
-  position: absolute;
-  left:0;
-  bottom:0;
+.textbox2{
+  background:black;
+  position: relative;
   color:white;
-  padding:2em;
-  width:100%;
-  min-width:auto;
-  background-color:black;
+  padding:1em;
 }
 
 /* Change the cart image to black on hover. */
