@@ -19,10 +19,7 @@
 
 .about, .logo, .info, .why, .misson{
   /* Set every element to use the border-box model. */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,28 +68,17 @@
 }
 
 /* Shopping cart boxes and styling */
-.cart {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border: 0.1em solid black;
-  border-radius: 10px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .item {
   -webkit-flex: 1 1 2em;
 	-ms-flex: 1 1 2em;
   flex: 1 1 2em;
-	margin:1em 2em;
+	margin-bottom: 1em;
   border-top-width: 0.1rem;
   border-top-style: solid;
   border-top-color: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .payinfo{
@@ -248,6 +234,7 @@
   border: 0.1em solid black;
   border-radius:0.5em;
   padding:1.5em;
+  margin: 0.5em;
 }
 
 
@@ -327,5 +314,3 @@
     flex: 1 10 15em;
   }
 }
-
-
