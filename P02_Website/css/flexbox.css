@@ -3,60 +3,60 @@
 }
 
 .list{
-    /* Set every element to use the border-box model. */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /* Set to display as a flexbox,and to wrap flexbox items responsively. */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-    border: 0.1em solid black;
-    border-radius:0.5em;
+  /* Set every element to use the border-box model. */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* Set to display as a flexbox,and to wrap flexbox items responsively. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  border: 0.1em solid black;
+  border-radius:0.5em;
 }
 
 .about, .logo, .info, .why, .misson{
-    /* Set every element to use the border-box model. */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  /* Set every element to use the border-box model. */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer {
-    /* This portion of code is drawn from https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-   padding-bottom: 1.5rem;
+  /* This portion of code is drawn from https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 .product {
-    /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
-    flex-basis: 15em;
-    padding: 1.5em;
-    border: 0.1em solid black;
-    border-radius:0.5em;
-    max-width:15em;
-    margin-left:1em;
-    margin-right:1em;
-    margin-bottom:2em;
+  /* This portion of code is drawn from jonitrythall.com/flexbox-cheatsheet */
+  flex-basis: 15em;
+  padding: 1.5em;
+  border: 0.1em solid black;
+  border-radius:0.5em;
+  max-width:15em;
+  margin-left:1em;
+  margin-right:1em;
+  margin-bottom:2em;
 }
 
 .product .addSpace{ /* ensures that all the products listings buttons are aligned */
   margin-bottom:2.2em;
 }
 
-  /* Break class adapted from https://graffino.com/til/D0xjf7VIGi-how-to-force-a-flexbox-item-to-a-new-row */
+/* Break class adapted from https://graffino.com/til/D0xjf7VIGi-how-to-force-a-flexbox-item-to-a-new-row */
 @media (max-width:82em){
   .break-four{
     flex-basis:100%;
@@ -70,124 +70,123 @@
 }
 
 /* Shopping cart boxes and styling */
-  .cart {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border: 0.1em solid black;
-    border-radius: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+.cart {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: 0.1em solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
-  .item {
-    -webkit-flex: 1 1 2em;
-	  -ms-flex: 1 1 2em;
-	  flex: 1 1 2em;
+.item {
+  -webkit-flex: 1 1 2em;
+	-ms-flex: 1 1 2em;
+  flex: 1 1 2em;
+	margin:1em 2em;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
 
-	  margin:1em 2em;
-    border-top-width: 0.1rem;
-    border-top-style: solid;
-    border-top-color: black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-  }
+.payinfo{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 
-  .payinfo{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
+.contactform{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
 
-  .contactform{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-left: 25rem;
-    margin-right: 25rem;
-  }
+/* remove top border on first item in checkout cart */
+.item:nth-of-type(1){
+  border-top-style:none;
+}
 
-  /* remove top border on first item in checkout cart */
-  .item:nth-of-type(1){
-    border-top-style:none;
-  }
+.cart-left{
+  -webkit-flex: 1 1 10em;
+  -ms-flex: 1 1  10em;
+  flex: 1 1 10em;
+  overflow:auto;
+}
 
-  .cart-left{
-    -webkit-flex: 1 1 10em;
-    -ms-flex: 1 1  10em;
-    flex: 1 1 10em;
-    overflow:auto;
-  }
+.cart-right{
+  -webkit-flex: 4 1 10em;
+  -ms-flex: 4 1 10em;
+  flex: 4 1 10em;
+  margin: 0 0 0 2em;
+}
 
-  .cart-right{
-    -webkit-flex: 4 1 10em;
-    -ms-flex: 4 1 10em;
-    flex: 4 1 10em;
-    margin: 0 0 0 2em;
-  }
+.box-row{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
 
-  .box-row{
-    display: -webkit-flex; /* For support in a series of Webkit browsers */
-    display: -ms-flex; /* For support in IE 10 */
-    display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
-    -webkit-flex-wrap: row;
-    -ms-flex-wrap: row;
-    flex-wrap: row;
+  gap:1em;
+}
 
-    gap:1em;
-  }
+.space-around{
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
 
-  .space-around{
-    -webkit-justify-content: space-around;
-    -ms-justify-content: space-around;
-    justify-content: space-around;
-  }
+/* centers text and boxes */
+.center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
 
-  /* centers text and boxes */
-  .center{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-  }
+.justify-content-center{
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
 
-  .justify-content-center{
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-  }
+.addGap{
+  gap:2em;
+}
 
-  .addGap{
-    gap:2em;
-  }
+.box-wrap{
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
 
-  .box-wrap{
-    display: -webkit-flex; /* For support in a series of Webkit browsers */
-    display: -ms-flex; /* For support in IE 10 */
-    display: flex;
-
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
 
 .nav-box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
-    display: -ms-flex; /* For support in IE 10 */
-    display: flex;
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
 
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    justify-content: space-around;
-    gap:3em;
+  justify-content: space-around;
+  gap:3em;
 }
 
 @media(max-width:65em){
@@ -203,7 +202,7 @@
 }
 
 
-  /* Colour boxes in style guide */
+/* Colour boxes in style guide */
 .box-color{
 	-webkit-flex: 1 1 10em;
 	-ms-flex: 1 1 10em;
@@ -243,7 +242,7 @@
   flex: 1 1 16em;
   border: 0.1em solid black;
   border-radius:0.5em;
-  padding:1.5em;  
+  padding:1.5em;
 }
 
 
@@ -258,7 +257,7 @@
 }
 
 .noStretch{
-  align-self: start; 
+  align-self: start;
 }
 
 .review-box{

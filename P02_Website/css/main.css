@@ -73,7 +73,7 @@ button:hover, button:focus {
   padding:0.8em 0.8em;
 }
 
-/* This portion of code is drawn from www.w3schools.com/css/css_form */
+/* This portion of code is drawn from https://www.w3schools.com/css/css_form.asp */
 input, textarea {
   padding: 0.8em 1em;
   margin: 0.5em 0;
@@ -91,26 +91,30 @@ input:focus { border: 0.1em solid black; }
 input[type="radio"]{ width:auto; }
 
 /* prevents textarea (review box) from being resizable */
-textarea{ 
+textarea{
   resize: none;
 }
 
 /* images that are links styling */
-.img-link:hover,.img-link:hover:focus{
-  opacity: 0.3;
+/* code adapted from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+.img-link{
+  transition: transform .2s; /* Animation */
 }
 
+.img-link:hover,.img-link:hover:focus{
+  transform: scale(1.2);
+}
 
 /*
   TEXT ELEMENTS -------------------
 */
 a{ color: black; }
 
-a[href*="citations"], a[href*="StyleGuide"]{
+a[href*="citations"], a[href*="StyleGuide"], a[href*="about"]{
   color: white;
 }
 
-/* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors */
+/* This portion of code is drawn from https://www.w3schools.com/CSSref/sel_hover.php & https://www.w3schools.com/cssref/css_selectors.php */
 a:hover { color: rgb(191, 228, 40); }
 
 nav a:hover, nav a:focus {
@@ -137,7 +141,7 @@ h4 { margin-bottom: 0.5rem; }
 /*
   COMBINED ELEMENTS -------------------
 */
-/* This portion of code is drawn from w3schools.com/css/css_navbar_horizontal */
+/* This portion of code is drawn from https://www.w3schools.com/css/css_navbar_horizontal.asp */
 .navbar{
   display:flex;
   margin: 0;
@@ -154,7 +158,7 @@ h4 { margin-bottom: 0.5rem; }
     flex-wrap:wrap;
   }
   .button-nav:last-of-type{
-    margin-left:none;
+    margin-left:0;
     margin-right: auto;
   }
 }
@@ -223,21 +227,45 @@ h4 { margin-bottom: 0.5rem; }
 /* Italics */
 .italic{ font-style:italic; }
 
+/* Image overlay slide adapted from https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp */
 /* Banner */
-
-.banner{
+.banner {
   position: relative;
   overflow: hidden;
+  width: 100%;
   max-height: 30em;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.banner:hover .overlay {
+  width: 100%;
+  left: 0;
 }
 
 .banner .textbox{
   position: absolute;
   left:0;
-  top:0;
+  bottom:0;
   color:white;
   padding:2em;
-  width:25vw;
+  width:100%;
   min-width:auto;
   background-color:black;
 }
@@ -253,7 +281,6 @@ h4 { margin-bottom: 0.5rem; }
   margin-top:0.1em;
 }
 .cart-button:hover .cartImg{ background-image: url("../img/cart-b.png"); }
-
 
 
 /* Product quantity counter adapted from https://dev.to/stackfindover/products-quantity-counter-using-html-css-javascript-663 */
@@ -304,13 +331,13 @@ h4 { margin-bottom: 0.5rem; }
   font-size: var(--ratingSize, 1rem);
   color: var(--uiRatingColor);
 }
-    
+
 .rating__control:nth-of-type(1):focus ~ .rating__item:nth-of-type(1)::before,
 .rating__control:nth-of-type(2):focus ~ .rating__item:nth-of-type(2)::before,
 .rating__control:nth-of-type(3):focus ~ .rating__item:nth-of-type(3)::before,
 .rating__control:nth-of-type(4):focus ~ .rating__item:nth-of-type(4)::before,
 .rating__control:nth-of-type(5):focus ~ .rating__item:nth-of-type(5)::before{
-  content: ""; 
+  content: "";
   box-shadow: 0 0 0 var(--ratingOutlineWidth, 4px) var(--uiRatingColorActive);
 
   position: absolute;
@@ -322,7 +349,7 @@ h4 { margin-bottom: 0.5rem; }
 }
 
 .rating__item{
-  cursor: pointer;  
+  cursor: pointer;
   position: relative;
 }
 
@@ -360,4 +387,8 @@ h4 { margin-bottom: 0.5rem; }
   --ratingColorActive: black;
   padding-bottom:0.2em;
   padding-top:0.2em;
+}
+
+.rating-text{
+  margin:0em;
 }
