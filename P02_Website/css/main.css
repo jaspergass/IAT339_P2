@@ -16,7 +16,7 @@ body {
   padding-bottom: 7vh;
 }
 
-@media (min-width:80em){
+@media (min-width:90em){
   body{
     padding-left:20vw;
     padding-right: 20vw;
