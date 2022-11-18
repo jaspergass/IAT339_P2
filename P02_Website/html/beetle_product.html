@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <!-- This portion of code is drawn from web.dev/i18n/en/responsive-web-design-basics/ -->
@@ -31,7 +31,9 @@
       </div>
     </header>
     <!-- Back button -->
-    <a href="../index.html"><button>Back</button></a>
+    <form action="../html/products.html">
+      <button>Back</button>
+    </form>
 
     <section>
         <div class="box-wrap space-around">
@@ -47,10 +49,10 @@
           </div>
           <div class="product-page-item">
             <!-- right side has a big image of the product. at the bottom, there are previews of another image of the product  -->
-            <img id="expandedImg" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg">
+            <img id="expandedImg" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg" alt="A brown beetle with large mandibles.">
             <div class="box-row product-display justify-content-center">
-              <img onclick="myFunction(this);" class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg">
-              <img onclick="myFunction(this);" class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2657.jpg">
+              <img onclick="myFunction(this);" class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2654.jpg" alt="A brown beetle with large mandibles.">
+              <img onclick="myFunction(this);" class="product-display-img" src="../img/beetles/beetle-deer-isolated-white-background-insect-macro_438009-2657.jpg" alt="A brown beetle with large mandibles.">
             </div>
           </div>
         </div>
@@ -64,9 +66,9 @@
         <div class="product-page-item noStretch">
           <h3>Leave a review</h3>
           <form>
-            <label for="star-rating">Rating: </label>
+            <p class="rating-text">Rating: </p>
             <!-- star rating from https://codepen.io/melnik909/pen/OvaxVY -->
-            <div class="rating" id="star-rating" name="star-rating">
+            <div class="rating" id="star-rating">
               <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
               <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
               <input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
@@ -122,7 +124,7 @@
         <div class="product-page-item review-box">
           <div class="review-item">
             <div class="product-title">
-              <img class="stars-img" src="../img/stars-5.png">
+              <img class="stars-img" src="../img/stars-5.png" alt="5 star rating">
               <h4>Fantastic first beetle</h4>
             </div>
             <p>Greg L.</p>
@@ -131,7 +133,7 @@
 
           <div class="review-item">
             <div class="product-title">
-              <img class="stars-img" src="../img/stars-5.png">
+              <img class="stars-img" src="../img/stars-5.png" alt="5 star rating">
               <h4>So excited</h4>
             </div>
             <p>Jade S.</p>
@@ -140,7 +142,7 @@
 
           <div class="review-item">
             <div class="product-title">
-              <img class="stars-img" src="../img/stars-4.png">
+              <img class="stars-img" src="../img/stars-4.png" alt="4 star rating">
               <h4>Pretty</h4>
             </div>
             <p>Hannah M.</p>
@@ -149,7 +151,7 @@
 
           <div class="review-item">
             <div class="product-title">
-              <img class="stars-img" src="../img/stars-4.png">
+              <img class="stars-img" src="../img/stars-4.png" alt="4 star rating">
               <h4>Good</h4>
             </div>
             <p>Jen K.</p>
@@ -160,32 +162,31 @@
       </div>
     </section>
 
+    <footer>
+      <div class="footer">
+        <h4>Contact Us</h4>
+  
+        <div class="contactform">
+          <form>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <input type="text" id="email" name="email" placeholder="Your Email">
+  
+            <textarea id="message" name="message" placeholder="Type your message..." style="height:200px"></textarea>
+  
+            <button class="center" onclick="alert('We will get back to you soon!')">Submit</button>
+          </form>
+        </div>
+        <p>insectcollective@service.com</p>
+  
+        <img class="footer-img" src="../img/insta-icon.png" alt="Company Instagram">
+        <img class="footer-img" src="../img/facebook-icon.png" alt="Company Instagram">
+        <div class="justify-content-center">
+          <a href="../html/citations.html">Citations</a>
+          <a href="../P02_StyleGuide/index.html">Style Guide</a>
+        </div>
+  
+      </div>
+    </footer>
   </body>
-
-  <footer>
-    <div class="footer">
-      <h4>Contact Us</h4>
-
-      <div class="contactform">
-        <form>
-          <input type="text" id="fname" name="firstname" placeholder="First Name">
-          <input type="text" id="lname" name="lastname" placeholder="Last Name">
-          <input type="text" id="email" name="email" placeholder="Your Email">
-
-          <textarea id="message" name="message" placeholder="Type your message..." style="height:200px"></textarea>
-
-          <button class="center" onclick="alert('We will get back to you soon!')">Submit</button>
-        </form>
-      </div>
-      <p>insectcollective@service.com</p>
-
-      <img class="footer-img" src="../img/insta-icon.png" alt="Company Instagram">
-      <img class="footer-img" src="../img/facebook-icon.png" alt="Company Instagram">
-      <div class="justify-content-center">
-        <a href="../html/citations.html">Citations</a>
-        <a href="../P02_StyleGuide/index.html">Style Guide</a>
-      </div>
-
-    </div>
-  </footer>
 </html>

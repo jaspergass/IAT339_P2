@@ -73,7 +73,7 @@ button:hover, button:focus {
   padding:0.8em 0.8em;
 }
 
-/* This portion of code is drawn from www.w3schools.com/css/css_form */
+/* This portion of code is drawn from https://www.w3schools.com/css/css_form.asp */
 input, textarea {
   padding: 0.8em 1em;
   margin: 0.5em 0;
@@ -95,10 +95,12 @@ textarea{
   resize: none;
 }
 
+/* images that are links styling */
+/* code adapted from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 .img-link{
   transition: transform .2s; /* Animation */
 }
-/* images that are links styling */
+
 .img-link:hover,.img-link:hover:focus{
   transform: scale(1.2);
 }
@@ -113,7 +115,7 @@ a[href*="citations"], a[href*="StyleGuide"]{
   color: white;
 }
 
-/* This portion of code is drawn from www.w3schools.com/cssref/sel_hover & www.w3schools.com/cssref/css_selectors */
+/* This portion of code is drawn from https://www.w3schools.com/CSSref/sel_hover.php & https://www.w3schools.com/cssref/css_selectors.php */
 a:hover { color: rgb(191, 228, 40); }
 
 nav a:hover, nav a:focus {
@@ -140,7 +142,7 @@ h4 { margin-bottom: 0.5rem; }
 /*
   COMBINED ELEMENTS -------------------
 */
-/* This portion of code is drawn from w3schools.com/css/css_navbar_horizontal */
+/* This portion of code is drawn from https://www.w3schools.com/css/css_navbar_horizontal.asp */
 .navbar{
   display:flex;
   margin: 0;
@@ -157,7 +159,7 @@ h4 { margin-bottom: 0.5rem; }
     flex-wrap:wrap;
   }
   .button-nav:last-of-type{
-    margin-left:none;
+    margin-left:0;
     margin-right: auto;
   }
 }
@@ -229,7 +231,7 @@ h4 { margin-bottom: 0.5rem; }
 /* Rotating Banner */
 
 .home-banner{
-  margin: 0, auto;
+  margin: auto;
   width: 1200px;
   height: 400px;
   background-color: black;
@@ -406,4 +408,8 @@ h4 { margin-bottom: 0.5rem; }
   --ratingColorActive: black;
   padding-bottom:0.2em;
   padding-top:0.2em;
+}
+
+.rating-text{
+  margin:0em;
 }
