@@ -16,6 +16,12 @@ body {
   padding-bottom: 7vh;
 }
 
+@media (min-width:80em){
+  body{
+    padding-left:20vw;
+    padding-right: 20vw;
+  }
+}
 
 /* This portion of code is drawn from https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
 body::after {
@@ -250,7 +256,7 @@ footer{
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-height: 40em;
+  max-height: 35em;
   min-width:15em;
 }
 
