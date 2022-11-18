@@ -61,7 +61,7 @@
   }
 }
 
-@media(max-width:99em){
+@media(min-width:50em){
   .break-three{
     flex-basis:100%;
   }
@@ -178,6 +178,10 @@
 
   justify-content: space-around;
   gap:3em;
+  max-width:86em;
+  margin-left:auto;
+  margin-right:auto;
+  
 }
 
 @media(max-width:65em){

@@ -6,20 +6,17 @@
 body {
   position:relative;
   font-family: Futura, Arial, Helvetica, sans-serif;
-  padding: 5rem;
-  margin:0;
-  font-family: Futura, Arial, Helvetica, sans-serif;
   padding-left:7vw;
   padding-right: 7vw;
   padding-top:7vh;
   padding-bottom: 7vh;
+  margin-left:auto;
+  margin-right:auto;
 }
-
-@media (min-width:90em){
-  body{
-    padding-left:20vw;
-    padding-right: 20vw;
-  }
+section{
+  max-width:86em;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* This portion of code is drawn from https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
@@ -73,6 +70,9 @@ button:hover, button:focus {
   color: black;
 }
 
+.back{
+  margin-bottom:1em;
+}
 .remove-button{
   font-size:0.8em;
   padding:0.8em 0.8em;
