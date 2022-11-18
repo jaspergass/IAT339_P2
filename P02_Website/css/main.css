@@ -110,7 +110,7 @@ textarea{
 */
 a{ color: black; }
 
-a[href*="citations"], a[href*="StyleGuide"], a[href*="about"]{
+a[href*="citations"], a[href*="StyleGuide"]{
   color: white;
 }
 
