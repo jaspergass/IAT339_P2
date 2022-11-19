@@ -102,11 +102,11 @@ textarea{
 
 /* images that are links styling */
 /* code adapted from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
-.img-link{
+.img-link, .footer-img{
   transition: transform .2s; /* Animation */
 }
 
-.img-link:hover,.img-link:hover:focus{
+.img-link:hover,.img-link:hover:focus,.footer-img:hover{
   transform: scale(1.2);
 }
 
@@ -138,7 +138,7 @@ h2 { margin-top: 0.5rem; }
 
 h3 {
   margin-top: 0.25rem;
-  color: #6E8015;
+  color: rgb(191, 228, 40);
 }
 
 h4 { margin-bottom: 0.5rem; }
@@ -215,6 +215,7 @@ h4 { margin-bottom: 0.5rem; }
 }
 
 .footer-img{
+  margin-top: 1em;
   width:100%;
   max-width:1.5em;
 }
