@@ -23,7 +23,7 @@ section{
 body::after {
   content: '';
   display: block;
-  height: 520px; /* Set same as footer's height */
+  height: 38em; /* Set same as footer's height */
 }
 
 .element {
@@ -225,9 +225,6 @@ h4 { margin-bottom: 0.5rem; }
   border-style:solid;
 }
 
-footer{
-  margin-top:6em;
-}
 
 /* Small product showcase images on single product page */
 .product-display-img{
