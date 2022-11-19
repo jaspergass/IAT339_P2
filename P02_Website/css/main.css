@@ -23,7 +23,7 @@ section{
 body::after {
   content: '';
   display: block;
-  height: 520px; /* Set same as footer's height */
+  height: 38em; /* Set same as footer's height */
 }
 
 .element {
@@ -226,9 +226,6 @@ h4 { margin-bottom: 0.5rem; }
   border-style:solid;
 }
 
-footer{
-  margin-top:6em;
-}
 
 /* Small product showcase images on single product page */
 .product-display-img{
@@ -243,11 +240,27 @@ footer{
 
 /* Banner */
 
-.banner, .banner2{
-  position: relative;
-  overflow: hidden;
+.banner, .banner2, .banner3{
   width: 100%;
+  display:block;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius:0.5em;
+}
+
+.banner{
+  background-image:url("../img/michal-mrozek-y0iTdaWGBxI-unsplash.jpg"); 
+  min-height:20em;
+}
+
+.banner2{
+  background-image:url("../img/gita-krishnamurti-gvU9kTsa5ek-unsplash.jpg");
+  min-height:25em;
+}
+
+.banner3{
+  background-image: url("../img/weronika-romanowska-RXV1X3wEe8k-unsplash.jpg");
+  min-height:20em;
 }
 
 .textbox, .textbox2{
@@ -257,6 +270,12 @@ footer{
   padding:2em;
   border-radius:0.5em;
 }
+
+.textbox2{
+  padding-left:5em;
+  padding-right:5em;
+}
+
 
 /* Change the cart image to black on hover. */
 /* Learned about background image property from https://www.w3schools.com/cssref/pr_background-image.php */
