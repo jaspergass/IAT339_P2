@@ -17,7 +17,7 @@
   border-radius:0.5em;
 }
 
-.about, .logo, .info, .why, .misson{
+.about, .logo, .info, .why, .mission{
   /* Set every element to use the border-box model. */
   padding-top: 1.5rem;
   display: flex;
@@ -309,12 +309,17 @@
   max-width:30em;
 }
 
-
 @media(min-width:60em){
   .textbox{
     flex: 2 1;
   }
-  .banner{
+  .banner, .banner3{
     flex: 1 10 15em;
+  }
+  .why{
+    flex:1 2;
+  }
+  .mission{
+    flex: 1 2;
   }
 }
